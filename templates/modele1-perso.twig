@@ -1,0 +1,24 @@
+{% extends "base.twig" %}
+
+{# Ce modèle TWIG étend le modèle 'base.twig' : il contient tous les éléments fixes
+et un bloc main dont le contenu est spécialisé pour afficher un livre #}
+
+{% block main %}
+<div class="block-fils">
+    <div class="perso-container">
+        {% for perso in personnages %}
+            <div class="personnage-card">
+                <h3>{{ perso.nom }}</h3>
+                <img src="{{ perso.image }}" alt="{{ perso.nom }}" class="perso-image">
+                <p><strong>Age :</strong> {{ perso.age }}</p>
+                <p><strong>Statut :</strong> {{ perso.statut }}</p>
+                <p><strong>Rôle :</strong> {{ perso.role }}</p>
+                <p><strong>Taille :</strong> {{ perso.taille }}</p>
+                <p><strong>Planète d'origine :</strong> {{ perso.planete_origine }}</p>
+                <p><strong>Apparition :</strong> {{ perso.film_apparition }}</p>
+                <p><strong>Acteur :</strong> {{ perso.acteur }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock main %}

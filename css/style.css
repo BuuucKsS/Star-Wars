@@ -1,0 +1,300 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+	color: white;
+	width: 1200px !important;
+	margin: auto;
+}
+
+header {
+	padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 21; /*permettra de positionner le <header> au-dessus des autres éléments du site -> cela se remarque mieux au scroll */
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 1200px;
+}
+
+header .img {
+	width: 100px
+}
+
+header img {
+	width: 100%;
+}
+
+header img:hover {
+    cursor: pointer; /* Affiche un curseur de type pointer au survol */
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
+}
+
+.logo-main_nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+	padding-left: 100px;
+    flex-grow: 1;
+}
+
+.main-nav ul li a {
+    font-family: StarJedi;
+    white-space: nowrap;
+}
+
+header nav ul {
+    padding: 3px;
+    display: flex;
+    margin-left: 20px;
+}
+
+header nav li {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 30px;
+    position: relative;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.logo-main_nav ul li a::after { 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #FEE720;
+    transition: width 0.3s ease-in-out;
+}
+
+.logo-main_nav ul li a:hover::after {
+    width: 100%; /* Ligne sur toute la largeur */
+}
+
+.flottant {
+    animation: flotter 4s ease-in-out infinite;
+}
+
+@keyframes flotter {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.etoile {
+    animation: clignoter 1.5s infinite;
+}
+
+@keyframes clignoter {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+
+main {
+	width: 1200px;
+    position: relative;
+	margin-top: 9rem;
+	margin-bottom: 4rem;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: black;
+	align-items: center;
+	justify-content: center;
+}
+
+.perso-image {
+    width: 200px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.perso-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.personnage-card {
+    border: 4px double white;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.personnage-card h3 {
+    margin-top: 0;
+	margin-bottom: 10px;
+    color: #FEE720;
+}
+
+.personnage-card p {
+    margin: 10px 0;
+}
+
+.personnage-card strong {
+    color: #FEE720;
+}
+
+.planetes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.planete-card {
+    border: 4px double white;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.planete-card h3 {
+    margin-top: 0;
+	margin-bottom: 10px;
+    color: #FEE720;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.planete-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.planete-card p {
+    margin: 10px 0;
+}
+
+.planete-card strong {
+    color: #FEE720;
+}
+
+.vaisseaux-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.vaisseau-card {
+    border: 4px double white;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.vaisseau-card h3 {
+    margin-top: 0;
+	margin-bottom: 10px;
+    color: #FEE720;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.vaisseau-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.vaisseau-card p {
+    margin: 10px 0;
+}
+
+.vaisseau-card strong {
+    color: #FEE720;
+}
+
+/*div.livre {
+	background-color: lightgreen;
+	padding: 10px 20px;
+	max-width: 600px;
+}
+
+div.deux-colonnes {
+	display: flex;
+	flex-flow: row;
+}
+
+div.bleu {
+	min-width: 400px;
+	background-color: lightblue;
+	padding: 10px;
+	margin: 10px;
+}
+
+div.rouge {
+	min-width: 400px;
+	background-color: lightcoral;
+	padding: 10px;
+	margin: 10px;
+}*/
+
+.block-pere {
+	background-color: bisque;
+	border: 2px dashed lightcoral;
+	padding: 20px;
+}
+
+footer {
+	background-color: white;
+	padding: 20px;
+	max-width: 1000px;
+	margin: 10px auto;
+}
+
+@font-face {
+    font-family: 'Starjedi';
+    src: url('../assets/fonts/Starjedi.ttf') format('truetype'),
+        url('../assets/fonts/Starjedi.woff') format('woff'),
+        url('../assets/fonts/Starjedi.woff2') format('woff2'),
+		url('../assets/fonts/Starjhol.ttf') format('truetype'),
+        url('../assets/fonts/Starjhol.woff') format('woff'),
+        url('../assets/fonts/Starjhol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

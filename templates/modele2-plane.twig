@@ -1,0 +1,19 @@
+{% extends "base.twig" %}
+
+{% block main %}
+<div class="block-fils">
+    <div class="planetes-container">
+        {% for planete in planetes %}
+            <div class="planete-card">
+                <h3>{{ planete.nom }}</h3>
+                <img src="{{ planete.image }}" alt="{{ planete.nom }}" class="planete-image">
+                <p><strong>Description :</strong> {{ planete.description }}</p>
+                <p><strong>Rôle :</strong> {{ planete.role }}</p>
+                <p><strong>Apparitions :</strong> {{ planete.apparitions }}</p>
+                <p><strong>Climat :</strong> {{ planete.climat }}</p>
+                <p><strong>Habitants principaux :</strong> {{ planete.habitants_principaux }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock main %}

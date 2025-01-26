@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+	Ce fichier HTML sert de base à tous les modèles en héritant.
+	Il contient les éléments qui seront présents sur toutes les pages du site.
+	En particulier les entêtes HTML, les header et footer et éventuellement le menu principal
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ titre }}</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	{% block css %}{% endblock %}
+</head>
+
+<body>
+	<header>
+	    <div class="logo-main_nav">
+			<div class="img">
+				<a href="index.php"><img src="images/logosw.png" alt="logo star wars"></a>
+			</div>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.php">Accueil</a></li>
+					<li><a href="page-perso.php">Personnages</a></li>
+					<li><a href="page-plane.php">Planètes</a></li>
+					<li><a href="page-vaisseaux.php">vaisseaux</a></li> 
+					<li><a href="contact.php">Contact</a></li>
+					<li><a href="a_propos.php">A Propos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		{# Ceci est un commentaire en TWIG #}
+		{# La ligne ci-dessous définit un bloc TWIG avec un contenu par défault.
+		On peut spécialiser dans les modèles fils en remplaçant le contenu par un autre #}
+		{% block main %}
+		{% endblock %}
+	</main>
+	<footer>
+		{% block footer %}
+		<div class="block-pere">
+			<p>© 2025 - Mon Site - Tous droits réservés</p>
+		</div>
+		{% endblock footer %}
+	</footer>
+</body>
+
+</html>
