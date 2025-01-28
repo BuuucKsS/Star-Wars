@@ -12,12 +12,13 @@
 	<title>{{ titre }}</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	{% block css %}{% endblock %}
 </head>
 
 <body>
 	<header>
-	    <div class="logo-main_nav">
+		<div class="logo-main_nav">
 			<div class="img">
 				<a href="index.php"><img src="images/logosw.png" alt="logo star wars"></a>
 			</div>
@@ -41,12 +42,43 @@
 		{% endblock %}
 	</main>
 	<footer>
-		{% block footer %}
-		<div class="block-pere">
-			<p>© 2025 - Mon Site - Tous droits réservés</p>
-		</div>
-		{% endblock footer %}
-	</footer>
+        <div class="logos">
+            <ul>
+                <li><a href="https://www.facebook.com/Formula1/"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/f1/"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://x.com/f1"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/@Formula1"><i class="bi bi-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+			<ul>
+				<li><a href="#">Actualités Star Wars</a></li>
+				<li><a href="#">Chronologie des films et séries</a></li>
+				<li><a href="#">Personnages emblématiques</a></li>
+				<li><a href="#">Nous contacter</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Ordres et factions</a></li>
+				<li><a href="#">Histoire de la galaxie</a></li>
+				<li><a href="#">Technologie et vaisseaux</a></li>
+				<li><a href="#">Produits dérivés</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Planètes et lieux</a></li>
+				<li><a href="#">Boutique officielle</a></li>
+				<li><a href="#">Partenaires et collaborations</a></li>
+				<li><a href="#">Médias et événements</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Confidentialité</a></li>
+				<li><a href="#">Mentions légales</a></li>
+				<li><a href="#">Accessibilité</a></li>
+			</ul>
+</div>
+
+        <p>&copy; 2025 Star Wars Passion. Tous droits réservés.</p>
+    </footer>
 </body>
 
 </html>

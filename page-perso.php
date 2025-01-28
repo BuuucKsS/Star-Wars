@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+
 // Initialise Twig
 include('include/twig.php');
 $twig = init_twig();

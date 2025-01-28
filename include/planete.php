@@ -1,7 +1,7 @@
 <?php
 // Planète 1 : Tatooine
 $planete1 = [
-    "nom" => "Tatooine",
+    "nom" => "tatooine",
     "image" => "./images/planete/tatoo.png",
     "description" => "Planète désertique sous deux soleils, recouverte de dunes de sable.",
     "role" => "Lieu de naissance d'Anakin Skywalker et résidence de Luke Skywalker.",
@@ -12,7 +12,7 @@ $planete1 = [
 
 // Planète 2 : Coruscant
 $planete2 = [
-    "nom" => "Coruscant",
+    "nom" => "coruscant",
     "image" => "./images/planete/corus.png",
     "description" => "Planète-cité, siège du Sénat Galactique et de l'Ordre Jedi.",
     "role" => "Centre politique de la République et de l'Empire.",
@@ -23,7 +23,7 @@ $planete2 = [
 
 // Planète 3 : Naboo
 $planete3 = [
-    "nom" => "Naboo",
+    "nom" => "naboo",
     "image" => "./images/planete/naboo.webp",
     "description" => "Planète luxuriante avec des prairies, des lacs, et des cités sous-marines.",
     "role" => "Planète natale de Padmé Amidala et Palpatine.",
@@ -34,7 +34,7 @@ $planete3 = [
 
 // Planète 4 : Hoth
 $planete4 = [
-    "nom" => "Hoth",
+    "nom" => "hoth",
     "image" => "./images/planete/hoth.png",
     "description" => "Planète glaciale recouverte de neige et de glace.",
     "role" => "Base de l'Alliance Rebelle dans L'Empire Contre-Attaque.",
@@ -45,7 +45,7 @@ $planete4 = [
 
 // Planète 5 : Endor
 $planete5 = [
-    "nom" => "Endor",
+    "nom" => "endor",
     "image" => "./images/planete/endor.png",
     "description" => "Lune boisée habitée par les Ewoks.",
     "role" => "Lieu de la bataille finale contre l'Empire.",
@@ -56,7 +56,7 @@ $planete5 = [
 
 // Planète 6 : Dagobah
 $planete6 = [
-    "nom" => "Dagobah",
+    "nom" => "dagobah",
     "image" => "./images/planete/dago.png",
     "description" => "Planète marécageuse et isolée.",
     "role" => "Refuge de Yoda et lieu d'entraînement de Luke Skywalker.",
@@ -67,7 +67,7 @@ $planete6 = [
 
 // Planète 7 : Mustafar
 $planete7 = [
-    "nom" => "Mustafar",
+    "nom" => "mustafar",
     "image" => "./images/planete/musta.png",
     "description" => "Planète volcanique recouverte de lave.",
     "role" => "Lieu du duel épique entre Obi-Wan et Anakin, repaire de Dark Vador.",
@@ -78,7 +78,7 @@ $planete7 = [
 
 // Planète 8 : Kashyyyk
 $planete8 = [
-    "nom" => "Kashyyyk",
+    "nom" => "kashyyyk",
     "image" => "./images/planete/kashy.webp",
     "description" => "Planète couverte de jungles et forêts immenses.",
     "role" => "Planète natale de Chewbacca, lieu de bataille des Guerres des Clones.",
@@ -89,7 +89,7 @@ $planete8 = [
 
 // Planète 9 : Jakku
 $planete9 = [
-    "nom" => "Jakku",
+    "nom" => "jakku",
     "image" => "./images/planete/jakku.png",
     "description" => "Planète désertique jonchée de vaisseaux écrasés.",
     "role" => "Lieu de résidence de Rey, théâtre de grandes batailles.",
@@ -100,7 +100,7 @@ $planete9 = [
 
 // Planète 10 : Alderaan
 $planete10 = [
-    "nom" => "Alderaan",
+    "nom" => "alderaan",
     "image" => "./images/planete/alde.webp",
     "description" => "Planète pacifique, célèbre pour sa beauté naturelle.",
     "role" => "Planète natale de Leia, détruite par l'Étoile de la Mort.",

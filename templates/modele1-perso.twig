@@ -4,19 +4,29 @@
 et un bloc main dont le contenu est spécialisé pour afficher un livre #}
 
 {% block main %}
-<div class="block-fils">
+<div class="personnages-block">
     <div class="perso-container">
         {% for perso in personnages %}
-            <div class="personnage-card">
-                <h3>{{ perso.nom }}</h3>
-                <img src="{{ perso.image }}" alt="{{ perso.nom }}" class="perso-image">
-                <p><strong>Age :</strong> {{ perso.age }}</p>
-                <p><strong>Statut :</strong> {{ perso.statut }}</p>
-                <p><strong>Rôle :</strong> {{ perso.role }}</p>
-                <p><strong>Taille :</strong> {{ perso.taille }}</p>
-                <p><strong>Planète d'origine :</strong> {{ perso.planete_origine }}</p>
-                <p><strong>Apparition :</strong> {{ perso.film_apparition }}</p>
-                <p><strong>Acteur :</strong> {{ perso.acteur }}</p>
+            <div class="personnage-card {{ perso.couleur|lower }}">
+                <div class="imgcard">
+                    <img src="{{ perso.image }}" alt="{{ perso.nom }}" class="perso-image flottant">
+                </div>
+                <div class="textcard">
+                    <div class="top">
+                        <h3>{{ perso.nom }}</h3>
+                        <img src="{{ perso.badge }}" alt="{{ perso.statut}}" class="imgtop">
+                    </div>
+                    <p><strong>Age :</strong> {{ perso.age }}</p>
+                    <p><strong>Statut :</strong> {{ perso.statut }}</p>
+                    <p><strong>Rôle :</strong> {{ perso.role }}</p>
+                    <p><strong>Taille :</strong> {{ perso.taille }}</p>
+                    <p><strong>Arme Principale :</strong> {{ perso.arme_principale }}</p>
+                    <p><strong>Vaisseau favori :</strong> {{ perso.vehicule_favori }}</p>
+                    <p><strong>Planète d'origine :</strong> {{ perso.planete_origine }}</p>
+                    <p><strong>Apparition :</strong> {{ perso.film_apparition }}</p>
+                    <p><strong>Acteur :</strong> {{ perso.acteur }}</p>
+                    <a href="{{ perso.lien }}"><i class="bi bi-arrow-right fleched"></i></a>
+                </div>
             </div>
         {% endfor %}
     </div>

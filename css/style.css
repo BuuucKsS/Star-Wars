@@ -3,18 +3,19 @@ html {
 }
 
 body {
-	background-color: black;
-	color: white;
-	width: 1200px !important;
-	margin: auto;
+    background-color: black;
+    color: white;
+    width: 1200px !important;
+    margin: auto;
 }
 
 header {
-	padding-top: 25px;
+    padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 40px;
     padding-right: 40px;
-    z-index: 21; /*permettra de positionner le <header> au-dessus des autres éléments du site -> cela se remarque mieux au scroll */
+    z-index: 21;
+    /*permettra de positionner le <header> au-dessus des autres éléments du site -> cela se remarque mieux au scroll */
     background-color: black;
     position: fixed;
     top: 0;
@@ -22,15 +23,16 @@ header {
 }
 
 header .img {
-	width: 100px
+    width: 100px
 }
 
 header img {
-	width: 100%;
+    width: 100%;
 }
 
 header img:hover {
-    cursor: pointer; /* Affiche un curseur de type pointer au survol */
+    cursor: pointer;
+    /* Affiche un curseur de type pointer au survol */
     transform: scale(1.15);
     transition: transform 0.3s ease;
 }
@@ -44,7 +46,7 @@ header img:hover {
 .main-nav {
     display: flex;
     align-items: center;
-	padding-left: 100px;
+    padding-left: 100px;
     flex-grow: 1;
 }
 
@@ -74,7 +76,7 @@ header nav li a {
     display: inline-block;
 }
 
-.logo-main_nav ul li a::after { 
+.logo-main_nav ul li a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -86,7 +88,8 @@ header nav li a {
 }
 
 .logo-main_nav ul li a:hover::after {
-    width: 100%; /* Ligne sur toute la largeur */
+    width: 100%;
+    /* Ligne sur toute la largeur */
 }
 
 .flottant {
@@ -94,9 +97,13 @@ header nav li a {
 }
 
 @keyframes flotter {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
+
     50% {
         transform: translateY(-10px);
     }
@@ -107,9 +114,12 @@ header nav li a {
 }
 
 @keyframes clignoter {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.5;
     }
@@ -117,15 +127,93 @@ header nav li a {
 
 
 main {
-	width: 1200px;
+    width: 1000px;
     position: relative;
-	margin-top: 9rem;
-	margin-bottom: 4rem;
-	margin-left: auto;
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
     margin-right: auto;
-	background-color: black;
-	align-items: center;
-	justify-content: center;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Personnages */
+
+
+.perso-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.personnage-card {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    border: 3px solid #ffffff; /* Blanc pur */
+    box-shadow: 0 0 15px #ffffff, 0 0 25px #d9d9d9, 0 0 35px #bfbfbf; 
+    border-radius: 10px;
+    background-color: #212121; /* Fond sombre */
+    transition: 0.3s ease-in-out;
+    gap: 70px;
+}
+
+/* Pour un sabre vert */
+.personnage-card.vert:hover {
+    border: 3px solid #35ec6f;
+    box-shadow: 0 0 15px #35ec6f, 0 0 30px #20da3b, 0 0 45px #00d632;
+}
+
+/* Pour un sabre bleu */
+.personnage-card.bleu:hover {
+    border: 3px solid #1e82e0;
+    box-shadow: 0 0 15px #1e82e0, 0 0 30px #1a6ac6, 0 0 45px #0f61b0;
+}
+
+/* Pour un sabre rouge */
+.personnage-card.rouge:hover {
+    border: 3px solid #d10000;
+    box-shadow: 0 0 15px #d10000, 0 0 30px #b30000, 0 0 45px #8a0000;
+}
+
+/* Pour un sabre jaune */
+.personnage-card.jaune:hover {
+    border: 3px solid #f7e300;
+    box-shadow: 0 0 15px #f7e300, 0 0 30px #f7d100, 0 0 45px #f7b800;
+}
+
+/* Pour un sabre violet */
+.personnage-card.violet:hover {
+    border: 3px solid #9b4dff;
+    box-shadow: 0 0 15px #9b4dff, 0 0 30px #7a39cc, 0 0 45px #5c28a3;
+}
+
+/* Décalage pour les cards impaires (vers la droite de 100px) */
+.personnage-card:nth-child(odd):hover {
+    transform: translateX(50px);
+    transition: transform 0.3s ease;
+}
+
+/* Décalage pour les cards paires (vers la gauche de 100px) */
+.personnage-card:nth-child(even):hover {
+    transform: translateX(-50px);
+    transition: transform 0.3s ease;
+}
+
+
+.imgcard {
+    width: 230px;
+    height: 380px;
+    margin-left: 25px;
+    margin-top: 7px;
+    background-color: black;
+    border: 4px double white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .perso-image {
@@ -134,27 +222,28 @@ main {
     object-fit: contain;
 }
 
-.perso-container {
+.top {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.personnage-card {
-    border: 4px double white;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    width: calc(33.33% - 20px);
-    box-sizing: border-box;
+    margin-top: 15px;
+    gap: 170px;
 }
 
 .personnage-card h3 {
-    margin-top: 0;
-	margin-bottom: 10px;
+    font-family: StarJedi;
+    font-size: 1.5em;
     color: #FEE720;
+    width: 400px;
+}
+
+.top .imgtop {
+    border: 4px double white;
+    border-radius: 50%;
+}
+
+.top img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 .personnage-card p {
@@ -164,6 +253,20 @@ main {
 .personnage-card strong {
     color: #FEE720;
 }
+
+.personnage-card i {
+    font-size: 2em;
+    margin-left: 590px;
+    color: white;
+}
+
+.personnage-card a {
+    text-decoration: none;
+}
+
+
+/* Planètes */
+
 
 .planetes-container {
     display: flex;
@@ -185,8 +288,9 @@ main {
 
 .planete-card h3 {
     margin-top: 0;
-	margin-bottom: 10px;
+    margin-bottom: 10px;
     color: #FEE720;
+    font-family: StarJedi;
     font-size: 1.5em;
     text-align: center;
 }
@@ -206,6 +310,10 @@ main {
 .planete-card strong {
     color: #FEE720;
 }
+
+
+/* Vaisseaux */
+
 
 .vaisseaux-container {
     display: flex;
@@ -227,8 +335,9 @@ main {
 
 .vaisseau-card h3 {
     margin-top: 0;
-	margin-bottom: 10px;
+    margin-bottom: 10px;
     color: #FEE720;
+    font-family: StarJedi;
     font-size: 1.5em;
     text-align: center;
 }
@@ -249,42 +358,63 @@ main {
     color: #FEE720;
 }
 
-/*div.livre {
-	background-color: lightgreen;
-	padding: 10px 20px;
-	max-width: 600px;
+
+/* Footer */
+
+
+footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: black;
 }
 
-div.deux-colonnes {
-	display: flex;
-	flex-flow: row;
+footer p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
 }
 
-div.bleu {
-	min-width: 400px;
-	background-color: lightblue;
-	padding: 10px;
-	margin: 10px;
+footer ul li {
+    list-style-type: none;
 }
 
-div.rouge {
-	min-width: 400px;
-	background-color: lightcoral;
-	padding: 10px;
-	margin: 10px;
-}*/
-
-.block-pere {
-	background-color: bisque;
-	border: 2px dashed lightcoral;
-	padding: 20px;
+footer li a {
+    color: white;
+    text-decoration: none;
 }
 
-footer {
-	background-color: white;
-	padding: 20px;
-	max-width: 1000px;
-	margin: 10px auto;
+.logos i {
+    color: white;
+}
+
+.logos ul {
+    display: flex;
+    gap: 20px;
+}
+
+.logos ul li {
+    flex-direction: column;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.footer-menu ul {
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+
+.footer-menu ul li a {
+    color: #323232;
 }
 
 @font-face {
@@ -292,7 +422,7 @@ footer {
     src: url('../assets/fonts/Starjedi.ttf') format('truetype'),
         url('../assets/fonts/Starjedi.woff') format('woff'),
         url('../assets/fonts/Starjedi.woff2') format('woff2'),
-		url('../assets/fonts/Starjhol.ttf') format('truetype'),
+        url('../assets/fonts/Starjhol.ttf') format('truetype'),
         url('../assets/fonts/Starjhol.woff') format('woff'),
         url('../assets/fonts/Starjhol.woff2') format('woff2');
     font-weight: normal;

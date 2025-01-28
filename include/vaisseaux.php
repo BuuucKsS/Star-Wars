@@ -1,7 +1,7 @@
 <?php
 // 1. Faucon Millenium
 $vaisseau1 = [
-    "nom" => "Faucon Millenium",
+    "nom" => "faucon millenium",
     "image" => "./images/vaisseau/faucon.png",
     "description" => "Un vaisseau cargo modifié, rapide et puissant.",
     "role" => "Utilisé pour des missions de contrebande et des batailles clés.",
@@ -12,7 +12,7 @@ $vaisseau1 = [
 
 // 2. X-Wing
 $vaisseau2 = [
-    "nom" => "X-Wing",
+    "nom" => "x-wing",
     "image" => "./images/vaisseau/xwing.png",
     "description" => "Un chasseur polyvalent et emblématique de l'Alliance Rebelle.",
     "role" => "Essentiel dans la destruction des Étoiles de la Mort.",
@@ -23,7 +23,7 @@ $vaisseau2 = [
 
 // 3. TIE Fighter
 $vaisseau3 = [
-    "nom" => "TIE Fighter",
+    "nom" => "tie fighter",
     "image" => "./images/vaisseau/tiefighter.png",
     "description" => "Le chasseur standard de l'Empire Galactique.",
     "role" => "Utilisé pour des combats spatiaux contre les rebelles.",
@@ -34,7 +34,7 @@ $vaisseau3 = [
 
 // 4. Slave I
 $vaisseau4 = [
-    "nom" => "Slave I",
+    "nom" => "slave i",
     "image" => "./images/vaisseau/slave.png",
     "description" => "Le vaisseau personnel de Boba Fett et Jango Fett.",
     "role" => "Utilisé pour la chasse à prime, avec une technologie avancée et des armes puissantes.",
@@ -45,7 +45,7 @@ $vaisseau4 = [
 
 // 5. Star Destroyer
 $vaisseau5 = [
-    "nom" => "Star Destroyer",
+    "nom" => "star destroyer",
     "image" => "./images/vaisseau/stardestroyer.png",
     "description" => "Immense vaisseau de guerre de l'Empire.",
     "role" => "Utilisé pour dominer les batailles spatiales et comme symbole de l'Empire.",
@@ -56,7 +56,7 @@ $vaisseau5 = [
 
 // 6. Tantive IV
 $vaisseau6 = [
-    "nom" => "Tantive IV",
+    "nom" => "tantive iv",
     "image" => "./images/vaisseau/tantive.png",
     "description" => "Le vaisseau diplomatique de la famille Organa.",
     "role" => "Utilisé pour transporter les plans de l'Étoile de la Mort dans Un Nouvel Espoir.",
@@ -67,7 +67,7 @@ $vaisseau6 = [
 
 // 7. Étoile Noire
 $vaisseau7 = [
-    "nom" => "Étoile Noire",
+    "nom" => "étoile noire",
     "image" => "./images/vaisseau/etoilenoire.png",
     "description" => "Station spatiale massive capable de détruire des planètes entières avec son super-laser.",
     "role" => "Super-arme de l'Empire Galactique, utilisée pour instaurer la peur et le contrôle.",
@@ -78,7 +78,7 @@ $vaisseau7 = [
 
 // 8. Base Starkiller
 $vaisseau8 = [
-    "nom" => "Base Starkiller",
+    "nom" => "base starkiller",
     "image" => "./images/vaisseau/starkiller.png",
     "description" => "Super-arme construite à l'intérieur d'une planète glaciale, capable de détruire plusieurs planètes à la fois.",
     "role" => "Instrument de terreur du Premier Ordre, utilisée pour éliminer la Nouvelle République.",
