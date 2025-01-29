@@ -4,7 +4,6 @@
 et un bloc main dont le contenu est spécialisé pour afficher un livre #}
 
 {% block main %}
-<div class="personnages-block">
     <div class="perso-container">
         {% for perso in personnages %}
             <div class="personnage-card {{ perso.couleur|lower }}">
@@ -25,10 +24,9 @@ et un bloc main dont le contenu est spécialisé pour afficher un livre #}
                     <p><strong>Planète d'origine :</strong> {{ perso.planete_origine }}</p>
                     <p><strong>Apparition :</strong> {{ perso.film_apparition }}</p>
                     <p><strong>Acteur :</strong> {{ perso.acteur }}</p>
-                    <a href="{{ perso.lien }}"><i class="bi bi-arrow-right fleched"></i></a>
+                    <a href="{{ perso.lien }}" target="_blank"><i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         {% endfor %}
     </div>
-</div>
 {% endblock main %}

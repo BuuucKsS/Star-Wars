@@ -287,6 +287,7 @@ main {
 }
 
 .planete-card {
+    position: relative;
     border: 4px double white;
     padding: 20px;
     margin-bottom: 20px;
@@ -296,6 +297,12 @@ main {
     box-sizing: border-box;
     color: #fff;
 }
+
+.planete-card:hover img {
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 0.3s ease;
+}
+
 
 .planete-card h3 {
     margin-top: 0;
@@ -322,6 +329,18 @@ main {
     color: #FEE720;
 }
 
+.planete-card i {
+    color: white;
+}
+
+.planete-card a {
+    position: absolute;
+    bottom: 10px; /* Distance du bas de la carte */
+    right: 10px; /* Distance du côté droit de la carte */
+    font-size: 2em;
+    text-decoration: none;
+}
+
 
 /* Vaisseaux */
 
@@ -334,14 +353,28 @@ main {
 }
 
 .vaisseau-card {
-    border: 4px double white;
+    position: relative;
+    border: 3px solid #ffffff; /* Blanc pur */
+    box-shadow: 0 0 15px #ffffff, 0 0 25px #d9d9d9, 0 0 28px #bfbfbf; 
+    border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    width: calc(33.33% - 20px);
+    width: calc(50% - 20px);
     box-sizing: border-box;
     color: #fff;
+}
+
+/* Pour un effet bleu */
+.vaisseau-card.bleu:hover {
+    border: 3px solid #1e82e0;
+    box-shadow: 0 0 15px #1e82e0, 0 0 30px #1a6ac6, 0 0 45px #0f61b0;
+}
+
+/* Pour un effet rouge */
+.vaisseau-card.rouge:hover {
+    border: 3px solid #d10000;
+    box-shadow: 0 0 15px #d10000, 0 0 30px #b30000, 0 0 45px #8a0000;
 }
 
 .vaisseau-card h3 {
@@ -367,6 +400,18 @@ main {
 
 .vaisseau-card strong {
     color: #FEE720;
+}
+
+.vaisseau-card i {
+    color: white;
+}
+
+.vaisseau-card a {
+    position: absolute;
+    bottom: 10px; /* Distance du bas de la carte */
+    right: 10px; /* Distance du côté droit de la carte */
+    font-size: 2em;
+    text-decoration: none;
 }
 
 

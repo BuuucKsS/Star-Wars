@@ -1,7 +1,6 @@
 {% extends "base.twig" %}
 
 {% block main %}
-<div class="block-fils">
     <div class="planetes-container">
         {% for planete in planetes %}
             <div class="planete-card">
@@ -12,8 +11,12 @@
                 <p><strong>Apparitions :</strong> {{ planete.apparitions }}</p>
                 <p><strong>Climat :</strong> {{ planete.climat }}</p>
                 <p><strong>Habitants principaux :</strong> {{ planete.habitants_principaux }}</p>
+                <p><strong>Type :</strong> {{ planete.type }}</p> 
+                <p><strong>Coordonnées :</strong> {{ planete.coordonnees }}</p> 
+                <p><strong>Gravité :</strong> {{ planete.gravite }}</p> 
+                <p><strong>Langues :</strong> {{ planete.langues }}</p> 
+                <a href="{{ planete.lien }}" target="_blank"><i class="bi bi-arrow-right fleched"></i></a>
             </div>
         {% endfor %}
     </div>
-</div>
 {% endblock main %}
