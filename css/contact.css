@@ -46,7 +46,7 @@ main {
     border: 1px solid #f2df36;
     border-bottom: 2.5px solid #FEE720;
     border-radius: 5px 5px 0px 0px;
-    background-color: #141414;
+    background-color: black;
     color: white;
     font-size: 16px;
 }
