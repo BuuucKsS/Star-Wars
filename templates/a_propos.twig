@@ -1,8 +1,49 @@
 {% extends 'base.twig' %}
 
 {% block title %}A propos{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="css/apropos.css">
+{% endblock %}
 
 {% block main %}
-<h2>À propos de nous</h2>
-<p>Ceci est la page A propos.</p>
+    <div class="about-container">
+        <h1>À propos de notre site Star Wars</h1>
+        
+        <div class="cgu-section">
+            <h2>Conditions Générales d'Utilisation (CGU)</h2>
+            
+            <div class="cgu-content">
+                <h3>1. Introduction</h3>
+                <p>Les présentes Conditions Générales d'Utilisation (CGU) régissent l'accès et l'utilisation du site Star Wars Passion (ci-après dénommé "le Site"). En accédant et en utilisant le Site, vous acceptez pleinement et sans réserve les termes et conditions ci-dessous.</p>
+
+                <h3>2. Propriété intellectuelle</h3>
+                <p>Le contenu du Site, y compris mais sans se limiter aux textes, images, graphiques, vidéos, logos, et tout autre élément, est protégé par les lois sur la propriété intellectuelle. Tous les droits relatifs au contenu sont réservés. Toute reproduction, distribution ou exploitation non autorisée des éléments du Site est strictement interdite.</p>
+
+                <h3>3. Utilisation du site</h3>
+                <p>Le Site est mis à votre disposition pour un usage personnel et non commercial. Vous vous engagez à ne pas utiliser le Site à des fins illégales ou non autorisées, et à ne pas perturber son bon fonctionnement.</p>
+
+                <h3>4. Responsabilités</h3>
+                <p>Le Site ne pourra être tenu responsable des dommages directs ou indirects résultant de l'utilisation du Site, y compris la perte de données ou tout autre dommage matériel ou immatériel. Nous nous efforçons de maintenir le Site à jour, mais nous ne garantissons pas l'exactitude, la pertinence ou la disponibilité continue du contenu.</p>
+
+                <h3>5. Données personnelles</h3>
+                <p>Nous collectons des données personnelles uniquement dans le cadre de l'utilisation du Site. Ces données seront traitées conformément à notre Politique de Confidentialité. En utilisant ce Site, vous acceptez la collecte et le traitement de vos données personnelles tel qu'indiqué dans cette politique.</p>
+
+                <h3>6. Cookies</h3>
+                <p>Le Site utilise des cookies pour améliorer l'expérience utilisateur et collecter des données statistiques. Vous pouvez gérer les préférences des cookies via les paramètres de votre navigateur.</p>
+
+                <h3>7. Liens externes</h3>
+                <p>Le Site peut contenir des liens vers des sites externes. Nous n'assumons aucune responsabilité concernant le contenu de ces sites tiers et leur utilisation.</p>
+
+                <h3>8. Modifications des CGU</h3>
+                <p>Nous nous réservons le droit de modifier ces CGU à tout moment. Toute modification sera publiée sur cette page et prendra effet dès sa mise en ligne. Il vous est donc conseillé de consulter régulièrement cette page.</p>
+
+                <h3>9. Droit applicable</h3>
+                <p>Les présentes CGU sont régies par le droit français. Tout litige relatif à l'interprétation ou à l'exécution de ces CGU sera soumis aux tribunaux compétents.</p>
+
+                <h3>10. Contact</h3>
+                <p>Pour toute question concernant les présentes CGU, vous pouvez nous contacter à l'adresse suivante :<br>
+                <a href="mailto:contact@starwarspassion.com">contact@starwarspassion.com</a></p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -15,15 +15,19 @@ et un bloc main dont le contenu est spécialisé pour afficher un livre #}
                         <h3>{{ perso.nom }}</h3>
                         <img src="{{ perso.badge }}" alt="{{ perso.statut}}" class="imgtop">
                     </div>
-                    <p><strong>Age :</strong> {{ perso.age }}</p>
                     <p><strong>Statut :</strong> {{ perso.statut }}</p>
                     <p><strong>Rôle :</strong> {{ perso.role }}</p>
-                    <p><strong>Taille :</strong> {{ perso.taille }}</p>
                     <p><strong>Arme Principale :</strong> {{ perso.arme_principale }}</p>
                     <p><strong>Vaisseau favori :</strong> {{ perso.vehicule_favori }}</p>
                     <p><strong>Planète d'origine :</strong> {{ perso.planete_origine }}</p>
                     <p><strong>Apparition :</strong> {{ perso.film_apparition }}</p>
                     <p><strong>Acteur :</strong> {{ perso.acteur }}</p>
+                    <ul>
+                        <li><strong>Âge :</strong> {{ perso.caracteristiques.age }}</li>
+                        <li><strong>Taille :</strong> {{ perso.caracteristiques.taille }}</li>
+                        <li><strong>Poids :</strong> {{ perso.caracteristiques.poids }}</li>
+                        <li><strong>Sexe :</strong> {{ perso.caracteristiques.sexe }}</li>
+                    </ul>
                     <a href="{{ perso.lien }}" target="_blank"><i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>

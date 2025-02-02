@@ -6,12 +6,10 @@ error_reporting(E_ALL);
 
 // Personnage 1 : Luke Skywalker
 $personnage1 = [
-    "nom" => "luke skywalker",
-    "age" => 19,
+    "nom" => "Luke Skywalker",
     "statut" => "Jedi",
     "image" => "./images/jedi/luke.webp",
     "role" => "Héros principal de la trilogie originale",
-    "taille" => "1.72 m",
     "planete_origine" => "Tatooine",
     "film_apparition" => "Star Wars: Episode IV - A New Hope",
     "acteur" => "Mark Hamill",
@@ -20,16 +18,21 @@ $personnage1 = [
     "couleur" => "vert",
     "badge" => "./images/jedi/badgejedi.png",
     "lien" => "https://fr.wikipedia.org/wiki/Luke_Skywalker",
+    "caracteristiques" => [
+        "age" => 19,
+        "taille" => "1.72 m",
+        "poids" => "73 kg",
+        "sexe" => "Masculin"
+    ]
 ];
+
 
 // Personnage 2 : Leia Organa
 $personnage2 = [
     "nom" => "leia organa",
-    "age" => 19,
     "statut" => "Leader de la Rébellion",
     "image" => "./images/jedi/leia.webp",
     "role" => "Princesse et leader rebelle",
-    "taille" => "1.50 m",
     "planete_origine" => "Alderaan",
     "film_apparition" => "Star Wars: Episode IV - A New Hope",
     "acteur" => "Carrie Fisher",
@@ -38,16 +41,20 @@ $personnage2 = [
     "couleur" => "bleu",
     "badge" => "./images/jedi/badgerebelle.png",
     "lien" => "https://fr.wikipedia.org/wiki/Leia_Organa",
+    "caracteristiques" => [
+        "age" => 19,
+        "taille" => "1.50 m",
+        "poids" => "49 kg",
+        "sexe" => "Féminin"
+    ]
 ];
 
 // Personnage 3 : Han Solo
 $personnage3 = [
     "nom" => "han solo",
-    "age" => 29,
     "statut" => "Contrebandier",
     "image" => "./images/jedi/hansolo.webp",
     "role" => "Pilote du Faucon Millenium et héros rebelle",
-    "taille" => "1.80 m",
     "planete_origine" => "Corellia",
     "film_apparition" => "Star Wars: Episode IV - A New Hope",
     "acteur" => "Harrison Ford",
@@ -56,16 +63,20 @@ $personnage3 = [
     "couleur" => "jaune",
     "badge" => "./images/jedi/badgerebelle.png",
     "lien" => "https://fr.wikipedia.org/wiki/Han_Solo",
+    "caracteristiques" => [
+        "age" => 29,
+        "taille" => "1.80 m",
+        "poids" => "81 kg",
+        "sexe" => "Masculin"
+    ]
 ];
 
 // Personnage 4 : Dark Vador
 $personnage4 = [
     "nom" => "dark vador",
-    "age" => 46,
     "statut" => "Sith",
     "image" => "./images/jedi/vador.png",
     "role" => "Bras droit de l'Empereur",
-    "taille" => "2.02 m",
     "planete_origine" => "Tatooine",
     "film_apparition" => "Star Wars: Episode IV - A New Hope",
     "acteur" => "David Prowse (voix : James Earl Jones)",
@@ -74,16 +85,20 @@ $personnage4 = [
     "couleur" => "rouge",
     "badge" => "./images/jedi/badgesith.png",
     "lien" => "https://fr.wikipedia.org/wiki/Anakin_Skywalker",
+    "caracteristiques" => [
+        "age" => 46,
+        "taille" => "2.02 m",
+        "poids" => "136 kg",
+        "sexe" => "Masculin"
+    ]
 ];
 
 // Personnage 5 : Yoda
 $personnage5 = [
     "nom" => "yoda",
-    "age" => 900,
     "statut" => "Maître Jedi",
     "image" => "./images/jedi/yoda.webp",
     "role" => "Sage et mentor des Jedi",
-    "taille" => "0.66 m",
     "planete_origine" => "Inconnue",
     "film_apparition" => "Star Wars: Episode V - The Empire Strikes Back",
     "acteur" => "Frank Oz (voix et marionnette)",
@@ -92,16 +107,21 @@ $personnage5 = [
     "couleur" => "vert",
     "badge" => "./images/jedi/badgejedi.png",
     "lien" => "https://fr.wikipedia.org/wiki/Yoda",
+    "caracteristiques" => [
+        "age" => 900,
+        "taille" => "0.66 m",
+        "poids" => "17 kg",
+        "sexe" => "Masculin"
+    ]
+
 ];
 
 // Personnage 6 : Obi-Wan Kenobi
 $personnage6 = [
     "nom" => "obi-wan kenobi",
-    "age" => 57,
     "statut" => "Jedi",
     "image" => "./images/jedi/obi.png",
     "role" => "Maître Jedi et mentor de Luke",
-    "taille" => "1.82 m",
     "planete_origine" => "Stewjon",
     "film_apparition" => "Star Wars: Episode IV - A New Hope",
     "acteur" => "Alec Guinness (Ewan McGregor dans les préquels)",
@@ -110,16 +130,20 @@ $personnage6 = [
     "couleur" => "bleu",
     "badge" => "./images/jedi/badgejedi.png",
     "lien" => "https://fr.wikipedia.org/wiki/Obi-Wan_Kenobi",
+    "caracteristiques" => [
+        "age" => 57,
+        "taille" => "1.82 m",
+        "poids" => "77 kg",
+        "sexe" => "Masculin"
+    ]
 ];
 
 // Personnage 7 : Chewbacca
 $personnage7 = [
     "nom" => "chewbacca",
-    "age" => 200,
-    "statut" => "Wookiee",
+    "statut" => "Co-pilote du Faucon Millenium",
     "image" => "./images/jedi/chew.png",
-    "role" => "Copilote et fidèle allié de Han Solo",
-    "taille" => "2.28 m",
+    "role" => "Compagnon de Han Solo",
     "planete_origine" => "Kashyyyk",
     "film_apparition" => "Star Wars: Episode IV - A New Hope",
     "acteur" => "Peter Mayhew",
@@ -128,60 +152,78 @@ $personnage7 = [
     "couleur" => "jaune",
     "badge" => "./images/jedi/badgerebelle.png",
     "lien" => "https://fr.wikipedia.org/wiki/Chewbacca",
+    "caracteristiques" => [
+        "age" => 200,
+        "taille" => "2.28 m",
+        "poids" => "112 kg",
+        "sexe" => "Masculin"
+    ]
 ];
 
 // Personnage 8 : Rey
 $personnage8 = [
     "nom" => "rey",
-    "age" => 19,
     "statut" => "Jedi",
     "image" => "./images/jedi/rey.png",
-    "role" => "Héroïne de la trilogie suite",
-    "taille" => "1.70 m",
+    "role" => "Nouvelle génération de Jedi",
     "planete_origine" => "Jakku",
     "film_apparition" => "Star Wars: Episode VII - The Force Awakens",
     "acteur" => "Daisy Ridley",
-    "arme_principale" => "Bâton de combat",
-    "vehicule_favori" => "Faucon Millenium",
+    "arme_principale" => "Sabre laser bleu",
+    "vehicule_favori" => "Speeder",
     "couleur" => "bleu",
     "badge" => "./images/jedi/badgejedi.png",
     "lien" => "https://fr.wikipedia.org/wiki/Rey_(Star_Wars)",
+    "caracteristiques" => [
+        "age" => 19,
+        "taille" => "1.70 m",
+        "poids" => "54 kg",
+        "sexe" => "Féminin"
+    ]
 ];
 
 // Personnage 9 : Kylo Ren
 $personnage9 = [
     "nom" => "kylo ren",
-    "age" => 29,
-    "statut" => "Chevalier de Ren / Sith",
+    "statut" => "Sith",
     "image" => "./images/jedi/kyloren.png",
-    "role" => "Antagoniste principal de la trilogie suite",
-    "taille" => "1.89 m",
+    "role" => "Chef du Premier Ordre",
     "planete_origine" => "Chandrila",
     "film_apparition" => "Star Wars: Episode VII - The Force Awakens",
     "acteur" => "Adam Driver",
-    "arme_principale" => "Sabre laser à garde rouge",
-    "vehicule_favori" => "TIE Silencer",
+    "arme_principale" => "Sabre laser rouge",
+    "vehicule_favori" => "Navette de commandement",
     "couleur" => "rouge",
     "badge" => "./images/jedi/badgesith.png",
     "lien" => "https://fr.wikipedia.org/wiki/Kylo_Ren",
+    "caracteristiques" => [
+        "age" => 30,
+        "taille" => "1.89 m",
+        "poids" => "89 kg",
+        "sexe" => "Masculin"
+    ]
 ];
 
 // Personnage 10 : Emperor Palpatine
 $personnage10 = [
-    "nom" => "empereur palpatine",
-    "age" => 84,
-    "statut" => "Sith",
+    "nom" => "palpatine",
+    "statut" => "Empereur Sith",
     "image" => "./images/jedi/palpa.webp",
-    "role" => "Maître des Sith et dirigeant de l'Empire",
-    "taille" => "1.73 m",
+    "role" => "Seigneur Sith et dirigeant de l'Empire",
     "planete_origine" => "Naboo",
     "film_apparition" => "Star Wars: Episode III - Revenge of the Sith",
     "acteur" => "Ian McDiarmid",
-    "arme_principale" => "Éclairs de Force",
-    "vehicule_favori" => "Destroyer Stellaire",
+    "arme_principale" => "Éclairs Sith",
+    "vehicule_favori" => "Etoile de la Mort",
     "couleur" => "violet",
     "badge" => "./images/jedi/badgesith.png",
     "lien" => "https://fr.wikipedia.org/wiki/Palpatine",
+    "caracteristiques" => [
+        "age" => 84,
+        "taille" => "1.73 m",
+        "poids" => "75 kg",
+        "sexe" => "Masculin"
+    ]
 ];
 
 

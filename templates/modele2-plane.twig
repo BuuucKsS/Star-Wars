@@ -9,12 +9,15 @@
                 <p><strong>Description :</strong> {{ planete.description }}</p>
                 <p><strong>Rôle :</strong> {{ planete.role }}</p>
                 <p><strong>Apparitions :</strong> {{ planete.apparitions }}</p>
-                <p><strong>Climat :</strong> {{ planete.climat }}</p>
-                <p><strong>Habitants principaux :</strong> {{ planete.habitants_principaux }}</p>
-                <p><strong>Type :</strong> {{ planete.type }}</p> 
-                <p><strong>Coordonnées :</strong> {{ planete.coordonnees }}</p> 
-                <p><strong>Gravité :</strong> {{ planete.gravite }}</p> 
-                <p><strong>Langues :</strong> {{ planete.langues }}</p> 
+                <strong>Caractéristiques :</strong>
+                <ul>
+                    <li><strong>Climat :</strong> {{ planete.caractéristiques.climat }}</li>
+                    <li><strong>Habitants principaux :</strong> {{ planete.caractéristiques.habitants_principaux }}</li>
+                    <li><strong>Type :</strong> {{ planete.caractéristiques.type }}</li>
+                    <li><strong>Coordonnées : :</strong> {{ planete.caractéristiques.coordonnees }}</li>
+                    <li><strong>Gravité :</strong> {{ planete.caractéristiques.gravite }}</li>
+                    <li><strong>Langues :</strong> {{ planete.caractéristiques.langues }}</li>
+                </ul>
                 <a href="{{ planete.lien }}" target="_blank"><i class="bi bi-arrow-right fleched"></i></a>
             </div>
         {% endfor %}

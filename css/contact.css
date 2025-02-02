@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     margin-top: 7rem;
 }
@@ -11,7 +15,9 @@ main {
 }
 
 .formu h2 {
+    width: 700px;
     margin: 0 auto;
+    text-align: center;
     padding-bottom: 45px;
 }
 
@@ -45,6 +51,7 @@ main {
     padding: 10px;
     border: 1px solid #f2df36;
     border-bottom: 2.5px solid #FEE720;
+    box-shadow: 0 0 10px rgba(255, 232, 31, 0.5);
     border-radius: 5px 5px 0px 0px;
     background-color: black;
     color: white;

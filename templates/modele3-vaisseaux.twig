@@ -11,9 +11,21 @@
                 <p><strong>Apparitions :</strong> {{ vaisseau.apparitions }}</p>
                 <p><strong>Capacités :</strong> {{ vaisseau.capacités }}</p>
                 <p><strong>Point faible :</strong> {{ vaisseau.point_faible }}</p>
-                <p><strong>Fabricant :</strong> {{ vaisseau.fabricant }}</p>
-                <p><strong>Taille :</strong> {{ vaisseau.taille }}</p>
-                <p><strong>Vitesse maximale :</strong> {{ vaisseau.vitesse_max }}</p>
+                <strong>Caractéristiques :</strong>
+                <ul>
+                    <li><strong>Fabricant :</strong> {{ vaisseau.caractéristiques.fabricant }}</li>
+                    <li><strong>Taille :</strong> {{ vaisseau.caractéristiques.taille }}</li>
+                    <li><strong>Poids :</strong> {{ vaisseau.caractéristiques.poids }}</li>
+                    <li><strong>Autonomie :</strong> {{ vaisseau.caractéristiques.autonomie }}</li>
+                    <li>
+                        <strong>Vitesse :</strong>
+                        <ul>
+                            <li><strong>Vitesse Max :</strong> {{ vaisseau.caractéristiques.vitesse.vitesse_max }}</li>
+                            <li><strong>Vitesse Hyperespace :</strong> {{ vaisseau.caractéristiques.vitesse.vitesse_hyperespace }}</li>
+                            <li><strong>Accélération :</strong> {{ vaisseau.caractéristiques.vitesse.accélération }}</li>
+                        </ul>
+                    </li>
+                </ul>
                 <a href="{{ vaisseau.lien }}" target="_blank"><i class="bi bi-arrow-right fleched"></i></a>
             </div>
         {% endfor %}
