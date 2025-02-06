@@ -1,7 +1,9 @@
+/* Effet de défilement fluide pour toute la page */
 html {
     scroll-behavior: smooth;
 }
 
+/* Image de fond et largeur fixe pour le body */
 body {
     background-image: url(../images/fond.jpg);
     min-height: 100%;
@@ -10,13 +12,13 @@ body {
     margin: auto;
 }
 
+/* Positionnement fixe du header pour qu'il reste visible lors du défilement */
 header {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 40px;
     padding-right: 40px;
-    z-index: 22;
-    /*permettra de positionner le <header> au-dessus des autres éléments du site -> cela se remarque mieux au scroll */
+    z-index: 22; /*permettra de positionner le <header> au-dessus des autres éléments du site -> cela se remarque mieux au scroll */
     background-color: black;
     position: fixed;
     top: 0;
@@ -101,11 +103,17 @@ header nav li a {
     gap: 8px;
 }
 
+.trans span:hover {
+    transform: scale(1.25);
+    transition: transform 0.3s ease;
+}
+
 .flag-icon {
     width: 30px; /* Ajuste la taille selon tes besoins */
     height: 20px; /* Ajuste la hauteur si nécessaire */
 }
 
+/* Animation de flottement pour les éléments avec la classe .flottant */
 .flottant {
     animation: flotter 4s ease-in-out infinite;
 }
@@ -145,6 +153,7 @@ main {
     gap: 30px;
 }
 
+/* Effet de survol avec transition pour les cartes de personnages */
 .personnage-card {
     display: flex;
     width: 100%;
@@ -157,6 +166,7 @@ main {
     gap: 70px;
 }
 
+/* Effets de survol spécifiques pour différentes couleurs de sabre */
 /* Pour un sabre vert */
 .personnage-card.vert:hover {
     border: 3px solid #35ec6f;
@@ -187,6 +197,7 @@ main {
     box-shadow: 0 0 15px #9b4dff, 0 0 30px #7a39cc, 0 0 45px #5c28a3;
 }
 
+/* Décalage des cartes de personnages lors du survol */
 /* Décalage pour les cards impaires (vers la droite de 100px) */
 .personnage-card:nth-child(odd):hover {
     transform: translateX(50px);
@@ -293,11 +304,11 @@ main {
     color: #fff;
 }
 
+/* Effet de zoom et rotation sur les images de planètes au survol */
 .planete-card:hover img {
     transform: scale(1.1) rotate(5deg);
     transition: transform 0.3s ease;
 }
-
 
 .planete-card h3 {
     margin-top: 0;
@@ -315,6 +326,7 @@ main {
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
 
 .planete-card p {
     margin: 10px 0;
@@ -407,6 +419,7 @@ main {
     transition: background-color 0.3s ease;
 }
 
+/* Effets visuels pour les paragraphes dans les cartes de vaisseaux */
 .vaisseau-card p::before,
 .vaisseau-card p::after {
     content: '';
@@ -440,6 +453,7 @@ main {
     padding-left: 30px;
 }
 
+/* Effets visuels pour les paragraphes dans les cartes de vaisseaux */
 .vaisseau-card ul::before,
 .vaisseau-card ul::after {
     content: '';
@@ -548,6 +562,7 @@ footer li a {
     color: #323232;
 }
 
+/* Utilisation d'une police personnalisée */
 @font-face {
     font-family: 'Starjedi';
     src: url('../assets/fonts/Starjedi.ttf') format('truetype'),

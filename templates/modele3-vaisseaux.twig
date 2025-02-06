@@ -2,35 +2,55 @@
 
 {% block main %}
 {% if lang == 'en' %}
+    {# Conteneur principal pour tous les vaisseaux #}
     <div class="vaisseaux-container">
-        {% for vaisseau in vaisseaux %}
-            <div class="vaisseau-card {{ vaisseau.couleur|lower }}">
-                <h3>{{ vaisseau.nom }}</h3>
-                <img src="{{ vaisseau.image }}" alt="{{ vaisseau.nom }}" class="vaisseau-image">
-                <p><strong>Description :</strong> {{ vaisseau.description }}</p>
-                <p><strong>Role :</strong> {{ vaisseau.role }}</p>
-                <p><strong>Appearances :</strong> {{ vaisseau.apparitions }}</p>
-                <p><strong>Capabilities :</strong> {{ vaisseau.capacités }}</p>
-                <p><strong>Weakness :</strong> {{ vaisseau.point_faible }}</p>
-                <strong>Characteristics :</strong>
-                <ul>
-                    <li><strong>Manufacturer:</strong> {{ vaisseau.caractéristiques.fabricant }}</li>
-                    <li><strong>Size :</strong> {{ vaisseau.caractéristiques.taille }}</li>
-                    <li><strong>Weight :</strong> {{ vaisseau.caractéristiques.poids }}</li>
-                    <li><strong>Autonomy :</strong> {{ vaisseau.caractéristiques.autonomie }}</li>
-                    <li>
-                        <strong>Speed :</strong>
-                        <ul>
-                            <li><strong>Max Speed :</strong> {{ vaisseau.caractéristiques.vitesse.vitesse_max }}</li>
-                            <li><strong>Hyperspace Speed :</strong> {{ vaisseau.caractéristiques.vitesse.vitesse_hyperespace }}</li>
-                            <li><strong>Acceleration :</strong> {{ vaisseau.caractéristiques.vitesse.accélération }}</li>
-                        </ul>
-                    </li>
-                </ul>
-                <a href="{{ vaisseau.lien }}" target="_blank"><i class="bi bi-arrow-right fleched"></i></a>
-            </div>
-        {% endfor %}
-    </div>
+    {# Boucle sur chaque vaisseau dans le tableau 'vaisseaux' #}
+    {% for vaisseau in vaisseaux %}
+        {# Carte individuelle pour chaque vaisseau avec une classe de couleur dynamique #}
+        <div class="vaisseau-card {{ vaisseau.couleur|lower }}">
+            {# Nom du vaisseau #}
+            <h3>{{ vaisseau.nom }}</h3>
+            {# Image du vaisseau #}
+            <img src="{{ vaisseau.image }}" alt="{{ vaisseau.nom }}" class="vaisseau-image">
+            {# Description du vaisseau #}
+            <p><strong>Description :</strong> {{ vaisseau.description }}</p>
+            {# Rôle du vaisseau #}
+            <p><strong>Role :</strong> {{ vaisseau.role }}</p>
+            {# Apparitions du vaisseau dans les films/séries #}
+            <p><strong>Appearances :</strong> {{ vaisseau.apparitions }}</p>
+            {# Capacités du vaisseau #}
+            <p><strong>Capabilities :</strong> {{ vaisseau.capacités }}</p>
+            {# Point faible du vaisseau #}
+            <p><strong>Weakness :</strong> {{ vaisseau.point_faible }}</p>
+            {# Section des caractéristiques du vaisseau #}
+            <strong>Characteristics :</strong>
+            <ul>
+                {# Fabricant du vaisseau #}
+                <li><strong>Manufacturer:</strong> {{ vaisseau.caractéristiques.fabricant }}</li>
+                {# Taille du vaisseau #}
+                <li><strong>Size :</strong> {{ vaisseau.caractéristiques.taille }}</li>
+                {# Poids du vaisseau #}
+                <li><strong>Weight :</strong> {{ vaisseau.caractéristiques.poids }}</li>
+                {# Autonomie du vaisseau #}
+                <li><strong>Autonomy :</strong> {{ vaisseau.caractéristiques.autonomie }}</li>
+                {# Informations sur la vitesse du vaisseau #}
+                <li>
+                    <strong>Speed :</strong>
+                    <ul>
+                        {# Vitesse maximale #}
+                        <li><strong>Max Speed :</strong> {{ vaisseau.caractéristiques.vitesse.vitesse_max }}</li>
+                        {# Vitesse en hyperespace #}
+                        <li><strong>Hyperspace Speed :</strong> {{ vaisseau.caractéristiques.vitesse.vitesse_hyperespace }}</li>
+                        {# Accélération #}
+                        <li><strong>Acceleration :</strong> {{ vaisseau.caractéristiques.vitesse.accélération }}</li>
+                    </ul>
+                </li>
+            </ul>
+            {# Lien vers plus d'informations sur le vaisseau #}
+            <a href="{{ vaisseau.lien }}" target="_blank"><i class="bi bi-arrow-right fleched"></i></a>
+        </div>
+    {% endfor %}
+</div>
 {% else %}
     <div class="vaisseaux-container">
         {% for vaisseau in vaisseaux %}

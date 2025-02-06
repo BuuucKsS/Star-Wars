@@ -2,27 +2,38 @@
 
 {% block main %}
 {% if lang == 'en' %}
+    {# Conteneur principal pour toutes les planètes #}
     <div class="planetes-container">
-        {% for planete in planetes %}
-            <div class="planete-card">
-                <h3>{{ planete.nom }}</h3>
-                <img src="{{ planete.image }}" alt="{{ planete.nom }}" class="planete-image">
-                <p><strong>Description :</strong> {{ planete.description }}</p>
-                <p><strong>Role :</strong> {{ planete.role }}</p>
-                <p><strong>Appearances :</strong> {{ planete.apparitions }}</p>
-                <strong>Characteristics :</strong>
-                <ul>
-                    <li><strong>Climate :</strong> {{ planete.caractéristiques.climat }}</li>
-                    <li><strong>Main Inhabitants :</strong> {{ planete.caractéristiques.habitants_principaux }}</li>
-                    <li><strong>Type :</strong> {{ planete.caractéristiques.type }}</li>
-                    <li><strong>Coordinates :</strong> {{ planete.caractéristiques.coordonnees }}</li>
-                    <li><strong>Gravity :</strong> {{ planete.caractéristiques.gravite }}</li>
-                    <li><strong>Languages :</strong> {{ planete.caractéristiques.langues }}</li>
-                </ul>
-                <a href="{{ planete.lien }}" target="_blank"><i class="bi bi-arrow-right fleched"></i></a>
-            </div>
-        {% endfor %}
-    </div>
+    {# Boucle sur chaque planète dans le tableau 'planetes' #}
+    {% for planete in planetes %}
+        {# Carte individuelle pour chaque planète #}
+        <div class="planete-card">
+            {# Nom de la planète #}
+            <h3>{{ planete.nom }}</h3>
+            {# Image de la planète #}
+            <img src="{{ planete.image }}" alt="{{ planete.nom }}" class="planete-image">
+            {# Description de la planète #}
+            <p><strong>Description :</strong> {{ planete.description }}</p>
+            {# Rôle de la planète dans l'univers Star Wars #}
+            <p><strong>Role :</strong> {{ planete.role }}</p>
+            {# Apparitions de la planète dans les films/séries #}
+            <p><strong>Appearances :</strong> {{ planete.apparitions }}</p>
+            {# Section des caractéristiques de la planète #}
+            <strong>Characteristics :</strong>
+            <ul>
+                {# Liste des caractéristiques spécifiques #}
+                <li><strong>Climate :</strong> {{ planete.caractéristiques.climat }}</li>
+                <li><strong>Main Inhabitants :</strong> {{ planete.caractéristiques.habitants_principaux }}</li>
+                <li><strong>Type :</strong> {{ planete.caractéristiques.type }}</li>
+                <li><strong>Coordinates :</strong> {{ planete.caractéristiques.coordonnees }}</li>
+                <li><strong>Gravity :</strong> {{ planete.caractéristiques.gravite }}</li>
+                <li><strong>Languages :</strong> {{ planete.caractéristiques.langues }}</li>
+            </ul>
+            {# Lien vers plus d'informations sur la planète #}
+            <a href="{{ planete.lien }}" target="_blank"><i class="bi bi-arrow-right fleched"></i></a>
+        </div>
+    {% endfor %}
+</div>
 {% else %}
     <div class="planetes-container">
         {% for planete in planetes %}

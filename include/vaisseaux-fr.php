@@ -1,6 +1,6 @@
 <?php
 // 1. Faucon Millenium
-$vaisseau1 = [
+$vaisseau1 = [ // tableau 
     "nom" => "faucon millenium",
     "image" => "./images/vaisseau/faucon.png",
     "description" => "Un vaisseau cargo modifié, rapide et puissant.",
@@ -8,12 +8,12 @@ $vaisseau1 = [
     "apparitions" => "Présent dans toutes les trilogies.",
     "capacités" => "Rapide, très manœuvrable et équipé de canons laser puissants.",
     "point_faible" => "Dépendance aux modifications constantes pour fonctionner correctement.",
-    "caractéristiques" => [
+    "caractéristiques" => [ // tableau de tableau
         "fabricant" => "Corellian Engineering Corporation", 
         "taille" => "34.75 mètres", 
         "poids" => "25 tonnes",
         "autonomie" => "Inconnue, mais très élevée grâce à des réservoirs optimisés",
-        "vitesse" => [
+        "vitesse" => [ // tableau de tableau de tableau
             "vitesse_max" => "1 200 km/h dans l'atmosphère",
             "vitesse_hyperespace" => "0.5 sur l'échelle hyperdrive",
             "accélération" => "0 à 1000 km/h en quelques secondes",
@@ -26,7 +26,7 @@ $vaisseau1 = [
 
 
 // 2. X-Wing
-$vaisseau2 = [
+$vaisseau2 = [ // tableau
     "nom" => "x-Wing",
     "image" => "./images/vaisseau/xwing.png",
     "description" => "Un chasseur polyvalent et emblématique de l'Alliance Rebelle.",
@@ -34,12 +34,12 @@ $vaisseau2 = [
     "apparitions" => "Trilogie originale, trilogie suite.",
     "capacités" => "Polyvalent avec des torpilles à protons et des boucliers défensifs.",
     "point_faible" => "Moins rapide et fragile face à des TIE Fighters en grand nombre.",
-    "caractéristiques" => [
+    "caractéristiques" => [ // tableau de tableau
         "fabricant" => "Incom Corporation",
         "taille" => "12,5 mètres",
         "poids" => "5 tonnes",
         "autonomie" => "Missions longues grâce à son hyperdrive",
-        "vitesse" => [
+        "vitesse" => [ // tableau de tableau de tableau
             "vitesse_max" => "1 050 km/h dans l'atmosphère",
             "vitesse_hyperespace" => "1.0 sur l'échelle hyperdrive",
             "accélération" => "Rapide mais limité par la gravité artificielle",
@@ -51,7 +51,7 @@ $vaisseau2 = [
 
 
 // 3. TIE Fighter
-$vaisseau3 = [
+$vaisseau3 = [ // tableau
     "nom" => "TIE Fighter",
     "image" => "./images/vaisseau/tiefighter.png",
     "description" => "Le chasseur standard de l'Empire Galactique.",
@@ -59,12 +59,12 @@ $vaisseau3 = [
     "apparitions" => "Tous les films liés à l'Empire.",
     "capacités" => "Agile et rapide, équipé de canons laser.",
     "point_faible" => "Absence de boucliers et de systèmes de survie.",
-    "caractéristiques" => [
+    "caractéristiques" => [ // tableau de tableau
         "fabricant" => "Sienar Fleet Systems",
         "taille" => "6,3 mètres",
         "poids" => "3 tonnes",
         "autonomie" => "Limitée sans soutien d'un vaisseau mère",
-        "vitesse" => [
+        "vitesse" => [ // tableau de tableau de tableau
             "vitesse_max" => "1 200 km/h dans l'atmosphère",
             "vitesse_hyperespace" => "Non équipé",
             "accélération" => "Très rapide, idéal pour les attaques en essaim",
@@ -76,7 +76,7 @@ $vaisseau3 = [
 
 
 // 4. Slave I
-$vaisseau4 = [
+$vaisseau4 = [ // tableau
     "nom" => "Slave I",
     "image" => "./images/vaisseau/slave.png",
     "description" => "Le vaisseau personnel de Boba Fett et Jango Fett.",
@@ -84,12 +84,12 @@ $vaisseau4 = [
     "apparitions" => "L'Attaque des Clones, L'Empire Contre-Attaque, Le Livre de Boba Fett.",
     "capacités" => "Équipé d'armes avancées comme des bombes soniques.",
     "point_faible" => "Manque de vitesse face à certains chasseurs rapides.",
-    "caractéristiques" => [
+    "caractéristiques" => [ // tableau de tableau
         "fabricant" => "Kuat Systems Engineering",
         "taille" => "21,5 mètres",
         "poids" => "30 tonnes",
         "autonomie" => "Excellente, conçu pour de longues missions",
-        "vitesse" => [
+        "vitesse" => [ // tableau de tableau de tableau
             "vitesse_max" => "1 000 km/h dans l'atmosphère",
             "vitesse_hyperespace" => "Classe 1.0",
             "accélération" => "Modérée mais très maniable",
@@ -100,7 +100,7 @@ $vaisseau4 = [
 ];
 
 // 5. Star Destroyer
-$vaisseau5 = [
+$vaisseau5 = [ // tableau
     "nom" => "Star Destroyer",
     "image" => "./images/vaisseau/stardestroyer.png",
     "description" => "Immense vaisseau de guerre de l'Empire.",
@@ -108,12 +108,12 @@ $vaisseau5 = [
     "apparitions" => "Toutes les trilogies et Rogue One.",
     "capacités" => "Capable de transporter des troupes et chasseurs TIE.",
     "point_faible" => "Sa taille le rend vulnérable aux attaques ciblées.",
-    "caractéristiques" => [
+    "caractéristiques" => [ // tableau de tableau
         "fabricant" => "Kuat Drive Yards",
         "taille" => "1 600 mètres",
         "poids" => "Des millions de tonnes",
         "autonomie" => "Presque illimitée avec ravitaillement",
-        "vitesse" => [
+        "vitesse" => [ // tableau de tableau de tableau
             "vitesse_max" => "975 km/h dans l'atmosphère",
             "vitesse_hyperespace" => "Classe 2.0",
             "accélération" => "Lente mais constante",
@@ -124,7 +124,7 @@ $vaisseau5 = [
 ];
 
 // 6. Tantive IV
-$vaisseau6 = [
+$vaisseau6 = [ // tableau
     "nom" => "Tantive IV",
     "image" => "./images/vaisseau/tantive.png",
     "description" => "Le vaisseau diplomatique de la famille Organa.",
@@ -132,12 +132,12 @@ $vaisseau6 = [
     "apparitions" => "Un Nouvel Espoir, Rogue One.",
     "capacités" => "Vitesse élevée pour un transport diplomatique.",
     "point_faible" => "Peu équipé pour le combat spatial.",
-    "caractéristiques" => [
+    "caractéristiques" => [ // tableau de tableau
         "fabricant" => "Corellian Engineering Corporation",
         "taille" => "126,68 mètres",
         "poids" => "41 000 tonnes",
         "autonomie" => "Grande autonomie, conçu pour la diplomatie",
-        "vitesse" => [
+        "vitesse" => [ // tableau de tableau de tableau
             "vitesse_max" => "1 200 km/h dans l'atmosphère",
             "vitesse_hyperespace" => "Classe 2.0",
             "accélération" => "Rapide, idéal pour l'évasion",
@@ -148,7 +148,7 @@ $vaisseau6 = [
 ];
 
 // 7. Étoile Noire
-$vaisseau7 = [
+$vaisseau7 = [ // tableau
     "nom" => "Étoile Noire",
     "image" => "./images/vaisseau/etoilenoire.png",
     "description" => "Station spatiale massive capable de détruire des planètes.",
@@ -156,12 +156,12 @@ $vaisseau7 = [
     "apparitions" => "Un Nouvel Espoir, Le Retour du Jedi, Rogue One.",
     "capacités" => "Destruction planétaire avec son super-laser.",
     "point_faible" => "Points vulnérables exploités par les Rebelles.",
-    "caractéristiques" => [
+    "caractéristiques" => [ // tableau de tableau
         "fabricant" => "Empire Galactique",
         "taille" => "160 kilomètres de diamètre",
         "poids" => "Incalculable",
         "autonomie" => "Illimitée avec ses propres infrastructures",
-        "vitesse" => [
+        "vitesse" => [ // tableau de tableau de tableau
             "vitesse_max" => "Stationnaire",
             "vitesse_hyperespace" => "Non équipé",
             "accélération" => "Nulle, reste en orbite",
@@ -173,7 +173,7 @@ $vaisseau7 = [
 
 
 // 8. Base Starkiller
-$vaisseau8 = [
+$vaisseau8 = [ // tableau
     "nom" => "Base Starkiller",
     "image" => "./images/vaisseau/starkiller.png",
     "description" => "Super-arme construite à l'intérieur d'une planète glaciale, capable de détruire plusieurs planètes à la fois.",
@@ -181,12 +181,12 @@ $vaisseau8 = [
     "apparitions" => "Star Wars: Le Réveil de la Force.",
     "capacités" => "Destruction de systèmes stellaires entiers.",
     "point_faible" => "Instabilité du réacteur principal, exploité par la Résistance.",
-    "caractéristiques" => [
+    "caractéristiques" => [ // tableau de tableau
         "fabricant" => "Premier Ordre",
         "taille" => "Taille d'une planète",
         "poids" => "Incalculable",
         "autonomie" => "Illimitée, mais instable sans maintenance",
-        "vitesse" => [
+        "vitesse" => [ // tableau de tableau de tableau
             "vitesse_max" => "Stationnaire",
             "vitesse_hyperespace" => "Non applicable",
             "accélération" => "Aucune, stationnée",

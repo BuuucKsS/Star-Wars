@@ -1,7 +1,9 @@
+/* Effet de défilement fluide pour toute la page */
 html {
     scroll-behavior: smooth;
 }
 
+/* Image de fond et largeur fixe pour le body */
 body {
     background-image: url(../images/fond.jpg);
     min-height: 100%;
@@ -10,6 +12,7 @@ body {
     margin: auto;
 }
 
+/* Positionnement et dimensionnement du contenu principal */
 main {
     width: 1200px;
     position: relative;
@@ -21,6 +24,7 @@ main {
     justify-content: center;
 }
 
+/* Création d'un dégradé sur l'image de fond pour un effet de fondu */
 .st {
     width: 100%;
     height: 520px;
@@ -108,6 +112,7 @@ main {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+/* Création d'une ligne de soulignement animée pour les titres */
 .st h2::after, .st3 h2::after, .st5 h2::after, .st7 h2::after {
     content: '';
     position: absolute;
@@ -119,6 +124,7 @@ main {
     transition: width 0.3s ease-in-out;
 }
 
+/* Animation au survol pour la ligne de soulignement */
 .st:hover h2::after, .st3:hover h2::after, .st5:hover h2::after, .st7:hover h2::after {
     width: 100px;
 }
@@ -156,6 +162,7 @@ main {
     margin-bottom: 1rem;
 }
 
+/* Effet de survol avec transformation pour les sections d'intro et de highlights */
 .sw-intro, .sw-highlights {
     transition: transform 0.3s ease;
 }
@@ -175,6 +182,7 @@ main {
     position: relative;
 }
 
+/* Création d'une icône personnalisée pour les listes */
 .sw-highlights li::before {
     content: '\F138';
     font-family: 'Bootstrap Icons';
@@ -183,7 +191,7 @@ main {
     color: #FEE720;
 }
 
-
+/* Grille flexible pour les affiches de films */
 .sw-movie-grid {
     display: flex;
     flex-wrap: wrap;
@@ -204,6 +212,7 @@ main {
     transition: transform 0.3s ease;
 }
 
+/* Effet de survol avancé pour les affiches de films */
 .sw-movie-item:hover {
     transform: scale(1.05);
     z-index: 1;
@@ -220,6 +229,7 @@ main {
     transform: scale(1.1);
 }
 
+/* Styles avancés pour les citations */
 .cita {
     background-color: rgba(0, 0, 0, 0.7);
     border: 2px solid #FFE81F;
@@ -280,6 +290,7 @@ main {
     width: 700px;
 }
 
+/* Animation de séparateur avec effet de lueur */
 @keyframes glow {
     0% { box-shadow: 0 0 5px #FEE720; }
     50% { box-shadow: 0 0 20px #FEE720, 0 0 30px #FEE720; }

@@ -1,7 +1,7 @@
 <?php
 
 // Personnage 1 : Luke Skywalker
-$personnage1 = [
+$personnage1 = [ //tableau
     "nom" => "Luke Skywalker",
     "statut" => "Jedi",
     "image" => "./images/jedi/luke.webp",
@@ -14,7 +14,7 @@ $personnage1 = [
     "couleur" => "vert",
     "badge" => "./images/jedi/badgejedi.png",
     "lien" => "https://fr.wikipedia.org/wiki/Luke_Skywalker",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 19,
         "taille" => "1.72 m",
         "poids" => "73 kg",
@@ -24,7 +24,7 @@ $personnage1 = [
 
 
 // Personnage 2 : Leia Organa
-$personnage2 = [
+$personnage2 = [ //tableau
     "nom" => "leia organa",
     "statut" => "Leader de la Rébellion",
     "image" => "./images/jedi/leia.webp",
@@ -37,7 +37,7 @@ $personnage2 = [
     "couleur" => "bleu",
     "badge" => "./images/jedi/badgerebelle.png",
     "lien" => "https://fr.wikipedia.org/wiki/Leia_Organa",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 19,
         "taille" => "1.50 m",
         "poids" => "49 kg",
@@ -46,7 +46,7 @@ $personnage2 = [
 ];
 
 // Personnage 3 : Han Solo
-$personnage3 = [
+$personnage3 = [ //tableau
     "nom" => "han solo",
     "statut" => "Contrebandier",
     "image" => "./images/jedi/hansolo.webp",
@@ -59,7 +59,7 @@ $personnage3 = [
     "couleur" => "jaune",
     "badge" => "./images/jedi/badgerebelle.png",
     "lien" => "https://fr.wikipedia.org/wiki/Han_Solo",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 29,
         "taille" => "1.80 m",
         "poids" => "81 kg",
@@ -68,7 +68,7 @@ $personnage3 = [
 ];
 
 // Personnage 4 : Dark Vador
-$personnage4 = [
+$personnage4 = [ //tableau
     "nom" => "dark vador",
     "statut" => "Sith",
     "image" => "./images/jedi/vador.png",
@@ -81,7 +81,7 @@ $personnage4 = [
     "couleur" => "rouge",
     "badge" => "./images/jedi/badgesith.png",
     "lien" => "https://fr.wikipedia.org/wiki/Anakin_Skywalker",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 46,
         "taille" => "2.02 m",
         "poids" => "136 kg",
@@ -90,7 +90,7 @@ $personnage4 = [
 ];
 
 // Personnage 5 : Yoda
-$personnage5 = [
+$personnage5 = [ //tableau
     "nom" => "yoda",
     "statut" => "Maître Jedi",
     "image" => "./images/jedi/yoda.webp",
@@ -103,7 +103,7 @@ $personnage5 = [
     "couleur" => "vert",
     "badge" => "./images/jedi/badgejedi.png",
     "lien" => "https://fr.wikipedia.org/wiki/Yoda",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 900,
         "taille" => "0.66 m",
         "poids" => "17 kg",
@@ -113,7 +113,7 @@ $personnage5 = [
 ];
 
 // Personnage 6 : Obi-Wan Kenobi
-$personnage6 = [
+$personnage6 = [ //tableau
     "nom" => "obi-wan kenobi",
     "statut" => "Jedi",
     "image" => "./images/jedi/obi.png",
@@ -126,7 +126,7 @@ $personnage6 = [
     "couleur" => "bleu",
     "badge" => "./images/jedi/badgejedi.png",
     "lien" => "https://fr.wikipedia.org/wiki/Obi-Wan_Kenobi",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 57,
         "taille" => "1.82 m",
         "poids" => "77 kg",
@@ -135,7 +135,7 @@ $personnage6 = [
 ];
 
 // Personnage 7 : Chewbacca
-$personnage7 = [
+$personnage7 = [ //tableau
     "nom" => "chewbacca",
     "statut" => "Co-pilote du Faucon Millenium",
     "image" => "./images/jedi/chew.png",
@@ -148,7 +148,7 @@ $personnage7 = [
     "couleur" => "jaune",
     "badge" => "./images/jedi/badgerebelle.png",
     "lien" => "https://fr.wikipedia.org/wiki/Chewbacca",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 200,
         "taille" => "2.28 m",
         "poids" => "112 kg",
@@ -157,7 +157,7 @@ $personnage7 = [
 ];
 
 // Personnage 8 : Rey
-$personnage8 = [
+$personnage8 = [ //tableau
     "nom" => "rey",
     "statut" => "Jedi",
     "image" => "./images/jedi/rey.png",
@@ -170,7 +170,7 @@ $personnage8 = [
     "couleur" => "bleu",
     "badge" => "./images/jedi/badgejedi.png",
     "lien" => "https://fr.wikipedia.org/wiki/Rey_(Star_Wars)",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 19,
         "taille" => "1.70 m",
         "poids" => "54 kg",
@@ -179,7 +179,7 @@ $personnage8 = [
 ];
 
 // Personnage 9 : Kylo Ren
-$personnage9 = [
+$personnage9 = [ //tableau
     "nom" => "kylo ren",
     "statut" => "Sith",
     "image" => "./images/jedi/kyloren.png",
@@ -192,7 +192,7 @@ $personnage9 = [
     "couleur" => "rouge",
     "badge" => "./images/jedi/badgesith.png",
     "lien" => "https://fr.wikipedia.org/wiki/Kylo_Ren",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau 
         "age" => 30,
         "taille" => "1.89 m",
         "poids" => "89 kg",
@@ -201,7 +201,7 @@ $personnage9 = [
 ];
 
 // Personnage 10 : Emperor Palpatine
-$personnage10 = [
+$personnage10 = [ //tableau
     "nom" => "palpatine",
     "statut" => "Empereur Sith",
     "image" => "./images/jedi/palpa.webp",
@@ -214,7 +214,7 @@ $personnage10 = [
     "couleur" => "violet",
     "badge" => "./images/jedi/badgesith.png",
     "lien" => "https://fr.wikipedia.org/wiki/Palpatine",
-    "caracteristiques" => [
+    "caracteristiques" => [ //tableau de tableau
         "age" => 84,
         "taille" => "1.73 m",
         "poids" => "75 kg",
@@ -222,6 +222,6 @@ $personnage10 = [
     ]
 ];
 
-
+// tableau qui stock tous les autres 
 $personnages = [$personnage1, $personnage2, $personnage3, $personnage4, $personnage5, $personnage6, $personnage7, $personnage8, $personnage9, $personnage10];
 ?>

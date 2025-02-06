@@ -8,7 +8,7 @@ $twig = init_twig();
 $lang = isset($_GET['lang']) ? $_GET['lang'] : 'fr';
 
 // Inclure le fichier de données en fonction de la langue
-if ($lang === 'fr') {
+if ($lang == 'fr') {
     include('include/planete-fr.php');
 } else {
     include('include/planete-en.php');

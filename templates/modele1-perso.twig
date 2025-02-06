@@ -6,35 +6,45 @@ et un bloc main dont le contenu est spécialisé pour afficher un livre #}
 
 {% block main %}
 {% if lang == 'en' %}
+    {# Conteneur principal pour tous les personnages #}
     <div class="perso-container">
-        {% for perso in personnages %}
-            <div class="personnage-card {{ perso.couleur|lower }}">
-                <div class="imgcard">
-                    <img src="{{ perso.image }}" alt="{{ perso.nom }}" class="perso-image flottant">
-                </div>
-                <div class="textcard">
-                    <div class="top">
-                        <h3>{{ perso.nom }}</h3>
-                        <img src="{{ perso.badge }}" alt="{{ perso.statut}}" class="imgtop">
-                    </div>
-                    <p><strong>Status :</strong> {{ perso.statut }}</p>
-                    <p><strong>Role :</strong> {{ perso.role }}</p>
-                    <p><strong>Main Weapon :</strong> {{ perso.arme_principale }}</p>
-                    <p><strong>Favorite Ship :</strong> {{ perso.vehicule_favori }}</p>
-                    <p><strong>Home Planet :</strong> {{ perso.planete_origine }}</p>
-                    <p><strong>Appearance :</strong> {{ perso.film_apparition }}</p>
-                    <p><strong>Actor :</strong> {{ perso.acteur }}</p>
-                    <ul>
-                        <li><strong>Age :</strong> {{ perso.caracteristiques.age }}</li>
-                        <li><strong>Height :</strong> {{ perso.caracteristiques.taille }}</li>
-                        <li><strong>Weight :</strong> {{ perso.caracteristiques.poids }}</li>
-                        <li><strong>Gender :</strong> {{ perso.caracteristiques.sexe }}</li>
-                    </ul>
-                    <a href="{{ perso.lien }}" target="_blank"><i class="bi bi-arrow-right"></i></a>
-                </div>
+    {# Boucle sur chaque personnage dans le tableau 'personnages' #}
+    {% for perso in personnages %}
+        {# Carte de personnage avec une classe dynamique basée sur la couleur du personnage #}
+        <div class="personnage-card {{ perso.couleur|lower }}"> 
+            {# Conteneur pour l'image du personnage #}
+            <div class="imgcard">
+                {# Image du personnage avec classe pour effet flottant #}
+                <img src="{{ perso.image }}" alt="{{ perso.nom }}" class="perso-image flottant">
             </div>
-        {% endfor %}
-    </div>
+            {# Conteneur pour les informations textuelles du personnage #}
+            <div class="textcard">
+                {# Section supérieure avec le nom et le badge du personnage #}
+                <div class="top">
+                    <h3>{{ perso.nom }}</h3>
+                    <img src="{{ perso.badge }}" alt="{{ perso.statut}}" class="imgtop">
+                </div>
+                {# Informations détaillées sur le personnage #}
+                <p><strong>Status :</strong> {{ perso.statut }}</p>
+                <p><strong>Role :</strong> {{ perso.role }}</p>
+                <p><strong>Main Weapon :</strong> {{ perso.arme_principale }}</p>
+                <p><strong>Favorite Ship :</strong> {{ perso.vehicule_favori }}</p>
+                <p><strong>Home Planet :</strong> {{ perso.planete_origine }}</p>
+                <p><strong>Appearance :</strong> {{ perso.film_apparition }}</p>
+                <p><strong>Actor :</strong> {{ perso.acteur }}</p>
+                {# Liste des caractéristiques physiques du personnage #}
+                <ul>
+                    <li><strong>Age :</strong> {{ perso.caracteristiques.age }}</li>
+                    <li><strong>Height :</strong> {{ perso.caracteristiques.taille }}</li>
+                    <li><strong>Weight :</strong> {{ perso.caracteristiques.poids }}</li>
+                    <li><strong>Gender :</strong> {{ perso.caracteristiques.sexe }}</li>
+                </ul>
+                {# Lien vers plus d'informations sur le personnage #}
+                <a href="{{ perso.lien }}" target="_blank"><i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
 {% else %}
     <div class="perso-container">
         {% for perso in personnages %}

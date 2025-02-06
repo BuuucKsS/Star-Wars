@@ -46,16 +46,7 @@
 				</ul>
 			</nav>
 			{% endif %}
-			{#<nav class="main-nav">
-				<ul>
-					<li><a href="index.php">Accueil</a></li>
-					<li><a href="page-perso.php">Personnages</a></li>
-					<li><a href="page-vaisseaux.php">vaisseaux</a></li>
-					<li><a href="page-plane.php">Planètes</a></li>
-					<li><a href="a_propos.php">A Propos</a></li>
-					<li><a href="contact.php">Contact</a></li>
-				</ul>
-			</nav>#}
+		
 			<div class="trans">
 				<a href="?lang=fr"><span class="flag-icon flag-icon-fr"></span></a>
 				<a href="?lang=en"><span class="flag-icon flag-icon-gb"></span></a>
@@ -70,7 +61,45 @@
 		{% endblock %}
 	</main>
 	<footer>
-        <div class="logos">
+	{% if lang == 'en' %}
+		<div class="logos">
+			<ul>
+				<li><a href="https://www.facebook.com/StarWars.fr" target="_blank"><i class="bi bi-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/starwars/#" target="_blank"><i class="bi bi-instagram"></i></a></li>
+				<li><a href="https://x.com/starwars?mx=2" target="_blank"><i class="bi bi-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/c/StarWars" target="_blank"><i class="bi bi-youtube"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<ul>
+				<li><a href="index.php">Star Wars News</a></li>
+				<li><a href="https://www.clubic.com/streaming/disney-plus/guide-468090-star-wars-dans-quel-ordre-regarder-les-films-et-les-series.html" target="_blank">Movie and Series Timeline</a></li>
+				<li><a href="page-perso.php">Iconic Characters</a></li>
+				<li><a href="contact.php">Contact Us</a></li>
+			</ul>
+			<ul>
+				<li><a href="https://www.anakinworld.com/encyclopedie/listes/organisations" target="_blank">Orders and Factions</a></li>
+				<li><a href="https://starwars.fandom.com/fr/wiki/Galaxie" target="_blank">Galaxy History</a></li>
+				<li><a href="page-vaisseaux.php">Technology and Ships</a></li>
+				<li><a href="https://www.emp-online.fr/merchandising-pop-culture/star-wars/?forceThisShop=1" target="_blank">Merchandise</a></li>
+			</ul>
+			<ul>
+				<li><a href="page-plane.php">Planets and Locations</a></li>
+				<li><a href="https://www.disneystore.fr/personnages-et-films/star-wars/produits-star-wars?ef_id=Cj0KCQiAwOe8BhCCARIsAGKeD56Ssv_0QYcaet-GHdj8DIjHDL6YEOXvxlsSEKfnWG4BCqs5_Zml1oMaAk1bEALw_wcB:G:s&s_kwcid=AL!15493!3!!!!x!!!21674880389!&&cmp=knc-go:txtad:TDS-FR-Performance_Max-High_Priority_Franchise:pcode::::::dest&gad_source=1&gclid=Cj0KCQiAwOe8BhCCARIsAGKeD56Ssv_0QYcaet-GHdj8DIjHDL6YEOXvxlsSEKfnWG4BCqs5_Zml1oMaAk1bEALw_wcB&gclsrc=aw.ds" target="_blank">Official Store</a></li>
+				<li><a href="#">Partners and Collaborations</a></li>
+				<li><a href="#">Media and Events</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="a_propos.php">Legal Notice</a></li>
+				<li><a href="#">Accessibility</a></li>
+			</ul>
+		</div>
+
+        <p>&copy; 2025 Star Wars Passion. Tous droits réservés.</p>
+	{% else %}
+		<div class="logos">
             <ul>
                 <li><a href="https://www.facebook.com/StarWars.fr" target="_blank"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/starwars/#" target="_blank"><i class="bi bi-instagram"></i></a></li>
@@ -105,7 +134,8 @@
 			</ul>
 		</div>
 
-        <p>&copy; 2025 Star Wars Passion. Tous droits réservés.</p>
+		<p>&copy; 2025 Star Wars Passion. All rights reserved.</p>
+	{% endif %}
     </footer>
 </body>
 
