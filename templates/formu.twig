@@ -1,0 +1,28 @@
+{% extends "base.twig" %}
+
+{% block title %}Message Envoyé{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="css/formu.css">
+{% endblock %}
+
+{% block main %}
+{% if lang == 'en' %}
+    <section class="message-box">
+        <h2>Message sent !</h2>
+        <p><strong>Thank you, {{ nom }} {{ prenom }} !</strong></p>
+        <p>Your message has been received.</p>
+        <img src="./images/sabre.png" alt="Lightsaber">
+        <p>We will send a message to : <strong>{{ email }}</strong> to validate your account !</p>
+        <p class="star-wars-text">Long live Star Wars</p>
+    </section>
+{% else %}
+    <section class="message-box">
+        <h2>Message envoyé !</h2>
+        <p><strong>Merci, {{ nom }} {{ prenom }} !</strong></p>
+        <p>Votre message a bien été reçu.</p>
+        <img src="./images/sabre.png" alt="Sabre Laser">
+        <p>Nous vous enverrons à l'adresse : <strong>{{ email }}</strong> un message pour valider votre compte !</p>
+        <p class="star-wars-text">vive Star Wars</p>
+    </section>
+{% endif %}
+{% endblock %}

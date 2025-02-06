@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: 12rem;
+}
+
+.message-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FFE81F;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 20px #FFE81F;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #FFE81F;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #4BD5EE;
+}
+
+img {
+    width: 30%;
+}
+
+.star-wars-text {
+    font-family: 'StarJedi', sans-serif;
+    font-size: 1.5em;
+    color: #FFE81F;
+    text-shadow: 0 0 5px #FFE81F;
+    margin-top: 30px;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #FFE81F;
+    }
+    50% {
+        text-shadow: 0 0 20px #FFE81F, 0 0 30px #FFE81F;
+    }
+    100% {
+        text-shadow: 0 0 5px #FFE81F;
+    }
+}
+
+.star-wars-text {
+    animation: glow 2s infinite;
+}

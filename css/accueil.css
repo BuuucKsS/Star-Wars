@@ -220,6 +220,45 @@ main {
     transform: scale(1.1);
 }
 
+.cita {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FFE81F;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 660px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 0 20px #FFE81F;
+}
+
+.cita blockquote {
+    font-family: StarJedi;
+    font-size: 1.2em;
+    color: #e5db85;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    text-shadow: 0 0 10px #FFE81F;
+}
+
+.cita a {
+    text-decoration: none;
+}
+
+.cita p {
+    font-size: 1.2em;
+    color: #4BD5EE;
+    margin-top: 15px;
+}
+
+.cita p:hover {
+    color: #56696c;
+}
+
+.cita:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
 /* Script Separator */
 
 .separator-container {

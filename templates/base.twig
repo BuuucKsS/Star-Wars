@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 	{% block css %}{% endblock %}
 </head>
 
@@ -22,7 +23,30 @@
 			<div class="img">
 				<a href="index.php"><img src="images/logosw.png" alt="logo star wars"></a>
 			</div>
+			{% if lang == 'en' %}
 			<nav class="main-nav">
+				<ul>
+					<li><a href="index.php?lang=en">Home</a></li>
+					<li><a href="page-perso.php?lang=en">Characters</a></li>
+					<li><a href="page-vaisseaux.php?lang=en">Spaceships</a></li>
+					<li><a href="page-plane.php?lang=en">Planets</a></li>
+					<li><a href="a_propos.php?lang=en">About us</a></li>
+					<li><a href="contact.php?lang=en">Contact</a></li>
+				</ul>
+			</nav>
+			{% else %}
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.php?lang=fr">Accueil</a></li>
+					<li><a href="page-perso.php?lang=fr">Personnages</a></li>
+					<li><a href="page-vaisseaux.php?lang=fr">vaisseaux</a></li>
+					<li><a href="page-plane.php?lang=fr">Planètes</a></li>
+					<li><a href="a_propos.php?lang=fr">A Propos</a></li>
+					<li><a href="contact.php?lang=fr">Contact</a></li>
+				</ul>
+			</nav>
+			{% endif %}
+			{#<nav class="main-nav">
 				<ul>
 					<li><a href="index.php">Accueil</a></li>
 					<li><a href="page-perso.php">Personnages</a></li>
@@ -31,7 +55,11 @@
 					<li><a href="a_propos.php">A Propos</a></li>
 					<li><a href="contact.php">Contact</a></li>
 				</ul>
-			</nav>
+			</nav>#}
+			<div class="trans">
+				<a href="?lang=fr"><span class="flag-icon flag-icon-fr"></span></a>
+				<a href="?lang=en"><span class="flag-icon flag-icon-gb"></span></a>
+			</div>
 		</div>
 	</header>
 	<main>
@@ -75,7 +103,7 @@
 				<li><a href="a_propos.php">Mentions légales</a></li>
 				<li><a href="#">Accessibilité</a></li>
 			</ul>
-</div>
+		</div>
 
         <p>&copy; 2025 Star Wars Passion. Tous droits réservés.</p>
     </footer>

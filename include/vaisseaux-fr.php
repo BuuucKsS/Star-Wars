@@ -27,7 +27,7 @@ $vaisseau1 = [
 
 // 2. X-Wing
 $vaisseau2 = [
-    "nom" => "X-Wing",
+    "nom" => "x-Wing",
     "image" => "./images/vaisseau/xwing.png",
     "description" => "Un chasseur polyvalent et emblématique de l'Alliance Rebelle.",
     "role" => "Essentiel dans la destruction des Étoiles de la Mort.",

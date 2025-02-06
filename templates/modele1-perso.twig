@@ -3,7 +3,39 @@
 {# Ce modèle TWIG étend le modèle 'base.twig' : il contient tous les éléments fixes
 et un bloc main dont le contenu est spécialisé pour afficher un livre #}
 
+
 {% block main %}
+{% if lang == 'en' %}
+    <div class="perso-container">
+        {% for perso in personnages %}
+            <div class="personnage-card {{ perso.couleur|lower }}">
+                <div class="imgcard">
+                    <img src="{{ perso.image }}" alt="{{ perso.nom }}" class="perso-image flottant">
+                </div>
+                <div class="textcard">
+                    <div class="top">
+                        <h3>{{ perso.nom }}</h3>
+                        <img src="{{ perso.badge }}" alt="{{ perso.statut}}" class="imgtop">
+                    </div>
+                    <p><strong>Status :</strong> {{ perso.statut }}</p>
+                    <p><strong>Role :</strong> {{ perso.role }}</p>
+                    <p><strong>Main Weapon :</strong> {{ perso.arme_principale }}</p>
+                    <p><strong>Favorite Ship :</strong> {{ perso.vehicule_favori }}</p>
+                    <p><strong>Home Planet :</strong> {{ perso.planete_origine }}</p>
+                    <p><strong>Appearance :</strong> {{ perso.film_apparition }}</p>
+                    <p><strong>Actor :</strong> {{ perso.acteur }}</p>
+                    <ul>
+                        <li><strong>Age :</strong> {{ perso.caracteristiques.age }}</li>
+                        <li><strong>Height :</strong> {{ perso.caracteristiques.taille }}</li>
+                        <li><strong>Weight :</strong> {{ perso.caracteristiques.poids }}</li>
+                        <li><strong>Gender :</strong> {{ perso.caracteristiques.sexe }}</li>
+                    </ul>
+                    <a href="{{ perso.lien }}" target="_blank"><i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
     <div class="perso-container">
         {% for perso in personnages %}
             <div class="personnage-card {{ perso.couleur|lower }}">
@@ -33,4 +65,5 @@ et un bloc main dont le contenu est spécialisé pour afficher un livre #}
             </div>
         {% endfor %}
     </div>
+{% endif %}
 {% endblock main %}

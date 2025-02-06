@@ -6,6 +6,49 @@
 {% endblock %}
 
 {% block main %}
+{% if lang == 'en' %}
+    <div class="about-container">
+        <h1>About Our Star Wars Website</h1>
+        
+        <div class="cgu-section">
+            <h2>Terms of Use (ToU)</h2>
+            
+            <div class="cgu-content">
+                <h3>1. Introduction</h3>
+                <p>These Terms of Use (ToU) govern access to and use of the Star Wars Passion website (hereinafter referred to as "the Site"). By accessing and using the Site, you fully and unreservedly accept the terms and conditions below.</p>
+
+                <h3>2. Intellectual Property</h3>
+                <p>The content of the Site, including but not limited to texts, images, graphics, videos, logos, and any other elements, is protected by intellectual property laws. All rights related to the content are reserved. Any unauthorized reproduction, distribution, or exploitation of the Site's elements is strictly prohibited.</p>
+
+                <h3>3. Use of the Site</h3>
+                <p>The Site is made available to you for personal and non-commercial use. You agree not to use the Site for illegal or unauthorized purposes and not to disrupt its proper functioning.</p>
+
+                <h3>4. Liability</h3>
+                <p>The Site cannot be held responsible for any direct or indirect damages resulting from the use of the Site, including data loss or any other material or immaterial damage. We strive to keep the Site up to date, but we do not guarantee the accuracy, relevance, or continuous availability of the content.</p>
+
+                <h3>5. Personal Data</h3>
+                <p>We collect personal data only in connection with the use of the Site. This data will be processed in accordance with our Privacy Policy. By using this Site, you agree to the collection and processing of your personal data as stated in this policy.</p>
+
+                <h3>6. Cookies</h3>
+                <p>The Site uses cookies to enhance the user experience and collect statistical data. You can manage cookie preferences through your browser settings.</p>
+
+                <h3>7. External Links</h3>
+                <p>The Site may contain links to external websites. We assume no responsibility for the content of these third-party sites and their use.</p>
+
+                <h3>8. Changes to the ToU</h3>
+                <p>We reserve the right to modify these ToU at any time. Any changes will be published on this page and will take effect upon posting. It is therefore recommended to check this page regularly.</p>
+
+                <h3>9. Applicable Law</h3>
+                <p>These ToU are governed by French law. Any dispute regarding the interpretation or execution of these ToU will be subject to the competent courts.</p>
+
+                <h3>10. Contact</h3>
+                <p>For any questions regarding these ToU, you can contact us at the following address:<br>
+                <a href="mailto:contact@starwarspassion.com">contact@starwarspassion.com</a></p>
+            </div>
+        </div>
+    </div>
+
+{% else %}
     <div class="about-container">
         <h1>À propos de notre site Star Wars</h1>
         
@@ -46,4 +89,5 @@
             </div>
         </div>
     </div>
+{% endif %}
 {% endblock %}

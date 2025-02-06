@@ -3,11 +3,12 @@ html {
 }
 
 main {
-    margin-top: 7rem;
+    margin-top: 9.6rem;
 }
 
 .formu {
     width: 750px;
+    min-height: 54vh;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -81,4 +82,34 @@ main {
 
 .formu button:hover {
     background-color: #555; /* Gris plus foncé au survol */
+}
+
+/* FORMULAIRE */
+
+.message-box {
+    margin-top: 9rem;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-box h2 {
+    color: #007bff;
+    font-size: 2rem;
+}
+
+.message-box p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.message-box blockquote {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
 }

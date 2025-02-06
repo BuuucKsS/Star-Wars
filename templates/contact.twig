@@ -6,9 +6,42 @@
 {% endblock %}
 
 {% block main %}
+{% if lang == 'en' %}
+	<div class="formu">
+		<h2>Not registered yet ? Create your account to contact us !</h2>
+		<form action="formu.php?lang={{ lang }}" method="POST">
+			<div class="input-group">
+				<label for="nom">Last Name:</label>
+				<input type="text" id="nom" name="nom" required>
+			</div>
+
+			<div class="input-group">
+				<label for="prenom">First Name:</label>
+				<input type="text" id="prenom" name="prenom" required>
+			</div>
+
+			<div class="input-group">
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="input-group">
+				<label for="tel">Phone Number:</label>
+				<input type="tel" id="tel" name="tel" pattern="^0[1-9]([ .-]?[0-9]{2}){4}$" required>
+			</div>
+
+			<div class="input-group">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+
+			<button type="submit">Create my account</button>
+		</form>
+	</div>
+{% else %}
 	<div class="formu">
 		<h2>Vous n'êtes pas encore inscrit, créez votre compte pour nous contacter !</h2>
-		<form action="#" method="post">
+		<form action="formu.php?lang={{ lang }}" method="POST">
 			<div class="input-group">
 				<label for="nom">Nom :</label>
 				<input type="text" id="nom" name="nom" required>
@@ -37,4 +70,5 @@
 			<button type="submit">Créer mon compte</button>
 		</form>
 	</div>
+{% endif %}
 {% endblock %}

@@ -51,9 +51,8 @@ header img:hover {
     flex-grow: 1;
 }
 
-.main-nav ul li a {
+.logo-main_nav ul li a {
     font-family: StarJedi;
-    white-space: nowrap;
 }
 
 header nav ul {
@@ -93,6 +92,20 @@ header nav li a {
     /* Ligne sur toute la largeur */
 }
 
+.trans {
+    position: absolute; /* Ou 'fixed' si tu veux qu'il reste en place même quand tu fais défiler la page */
+    top: 35px; /* 10px du bord supérieur de ton header */
+    right: 20px; /* 10px du bord droit de ton header */
+    z-index: 1000; /* S'assurer que l'élément soit bien au-dessus des autres éléments */
+    display: flex;
+    gap: 8px;
+}
+
+.flag-icon {
+    width: 30px; /* Ajuste la taille selon tes besoins */
+    height: 20px; /* Ajuste la hauteur si nécessaire */
+}
+
 .flottant {
     animation: flotter 4s ease-in-out infinite;
 }
@@ -107,22 +120,6 @@ header nav li a {
 
     50% {
         transform: translateY(-10px);
-    }
-}
-
-.etoile {
-    animation: clignoter 1.5s infinite;
-}
-
-@keyframes clignoter {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
     }
 }
 
@@ -402,12 +399,73 @@ main {
 }
 
 .vaisseau-card p {
-    margin: 10px 0;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.vaisseau-card p::before,
+.vaisseau-card p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #FEE720;
+}
+
+.vaisseau-card p::before {
+    top: 0;
+}
+
+.vaisseau-card p::after {
+    bottom: 0;
+}
+
+.vaisseau-card p:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .vaisseau-card ul {
+    margin: 15px 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s ease;
     list-style-type: circle;
     padding-left: 30px;
+}
+
+.vaisseau-card ul::before,
+.vaisseau-card ul::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #FEE720;
+}
+
+.vaisseau-card ul::before {
+    top: 0;
+}
+
+.vaisseau-card ul::after {
+    bottom: 0;
+}
+
+.vaisseau-card ul:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.vaisseau-card li {
+    margin: 5px 0;
+    padding-left: 10px;
+    position: relative;
 }
 
 .vaisseau-card ul li {
